@@ -15,7 +15,28 @@
       <nav>
         <ul>
           <li>
-            <a href="catalog.html">Каталог</a>
+            <a href="#">Каталог</a>
+
+            <ul class="visually-hidden">
+              <li>
+                <a href="#">Новинки</a>
+              </li>
+              <li>
+                <a href="catalog.html">Сливочное</a>
+              </li>
+
+              <li>
+                <a href="#">Щербеты</a>
+              </li>
+
+              <li>
+                <a href="#">Фруктовый лед</a>
+              </li>
+
+              <li>
+                <a href="#">Мелорин</a>
+              </li>
+            </ul>
           </li>
 
           <li>
@@ -30,32 +51,35 @@
 
       <ul>
         <li>
-          <form>
-            <h2>Поиск мороженого</h2>
-
-            <!--Здесь будет форма-->
-          </form>
-
           <button type="button">
             <span class="loupe">Поиск</span>
           </button>
+          <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="GET">
+            <h2>Поиск мороженого</h2>
+
+            <input type="search" name="search" placeholder="Что ищем?">
+          </form>
         </li>
 
         <li>
-          <form>
-            <h2>Вход в личный кабинет</h2>
-
-            <!--Здесь будет форма-->
-          </form>
-
           <button type="button">
             <span class="open">Вход</span>
           </button>
+          <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="POST">
+            <h2>Вход в личный кабинет</h2>
+
+            <input type="email" name="email" placeholder="email@example.com"><br>
+
+            <input type="password" name="password" placeholder="Пароль"><br>
+            <button type="submit">Войти</button>
+          </form>
         </li>
 
         <li>
+          <h2>Корзина товаров</h2>
+
           <button type="button">
-            <span class="basket">Корзина товаров</span>
+            <span class="basket">Пусто</span>
           </button>
         </li>
       </ul>
@@ -266,10 +290,6 @@
         </p>
 
         <a href="#">Форма обратной связи</a>
-
-        <form>
-          <!--Здесь будет форма-->
-        </form>
       </section>
     </main>
 
@@ -330,6 +350,18 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a> 2019</p>
       </div>
     </footer>
+
+    <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="POST">
+      <h2>Мы обязательно вам ответим!</h2>
+
+      <input type="text" name="name" placeholder="Имя Фамилия"><br>
+
+      <input type="email" name="email" placeholder="email@example.com"><br>
+
+      <textarea name="text">В свободной форме</textarea><br>
+
+      <button type="submit">Отправить</button>
+    </form>
   </body>
 
 </html>
