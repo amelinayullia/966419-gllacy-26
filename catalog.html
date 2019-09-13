@@ -17,6 +17,27 @@
         <ul>
           <li>
             <a href="#">Каталог</a>
+
+            <ul class="visually-hidden">
+              <li>
+                <a href="#">Новинки</a>
+              </li>
+              <li>
+                <a href="catalog.html">Сливочное</a>
+              </li>
+
+              <li>
+                <a href="#">Щербеты</a>
+              </li>
+
+              <li>
+                <a href="#">Фруктовый лед</a>
+              </li>
+
+              <li>
+                <a href="#">Мелорин</a>
+              </li>
+            </ul>
           </li>
 
           <li>
@@ -31,33 +52,80 @@
 
       <ul>
         <li>
-          <form>
-            <h2>Поиск мороженого</h2>
-
-            <!--Здесь будет форма-->
-          </form>
-
           <button type="button">
             <span class="loupe">Поиск</span>
           </button>
+          <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="GET">
+            <h2>Поиск мороженого</h2>
+
+            <input type="search" name="search" placeholder="Что ищем?">
+          </form>
         </li>
 
         <li>
-          <form>
-            <h2>Вход в личный кабинет</h2>
-
-            <!--Здесь будет форма-->
-          </form>
-
           <button type="button">
             <span class="open">Вход</span>
           </button>
+          <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="POST">
+            <h2>Вход в личный кабинет</h2>
+
+            <input type="email" name="email" placeholder="email@example.com"><br>
+
+            <input type="password" name="password" placeholder="Пароль"><br>
+            <button type="submit">Войти</button>
+          </form>
         </li>
 
         <li>
+          <h2>Корзина товаров</h2>
+
           <button type="button">
-            <span class="basket">Корзина товаров</span>
+            <span class="basket">2 Товара</span>
           </button>
+
+          <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="POST">
+            <h2>Выбранный товар</h2>
+
+            <table>
+              <tr>
+                <td>
+                  <img src="img/ice-1.jpg" alt="Пломбир с апельсиновым джемом">
+                </td>
+
+                <td>Пломбир с апельсиновым джемом</td>
+
+                <td>1,5 кг х 200 руб.</td>
+
+                <td>300 руб.</td>
+              </tr>
+              <tr>
+
+                <td>
+                  <img src="img/ice-3.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                </td>
+
+                <td>
+                  Клубничный пломбир с присыпкой из белого шоколада
+                </td>
+
+                <td>1,5 кг х 300 руб.</td>
+
+                <td>450 руб.</td>
+              </tr>
+
+              <tr>
+                <td></td>
+
+                <td></td>
+
+                <td></td>
+
+                <td>Итого:750 руб.</td>
+              </tr>
+            </table>
+
+            <button type="submit">Оформить заказ</button>
+          </form>
         </li>
       </ul>
 
@@ -113,8 +181,7 @@
           </li>
 
           <li>
-            <img src="img/ice-2.jpg" width="267" height="267"
-              alt="Сливочно-кофейное с кусочками шоколада">
+            <img src="img/ice-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 
             <p>
               380
@@ -129,8 +196,7 @@
           </li>
 
           <li>
-            <img src="img/ice-3.jpg" width="267" height="267"
-              alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <img src="img/ice-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 
             <p>
               355
@@ -145,8 +211,7 @@
           </li>
 
           <li>
-            <img src="img/ice-4.png" width="267" height="267"
-              alt="Сливочное крем-брюле с карамельной подливкой">
+            <img src="img/ice-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 
             <p>
               415
@@ -161,8 +226,7 @@
           </li>
 
           <li>
-            <img src="img/ice-5.jpg" width="267" height="267"
-              alt="Сливочное с брусничным джемом">
+            <img src="img/ice-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
 
             <p>
               325
@@ -177,8 +241,7 @@
           </li>
 
           <li>
-            <img src="img/ice-6.jpg" width="267" height="267"
-              alt="Сливочно-черничное с цельными ягодами черники">
+            <img src="img/ice-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
 
             <p>
               410
@@ -193,8 +256,7 @@
           </li>
 
           <li>
-            <img src="img/ice-7.jpg" width="267" height="267"
-              alt="Сливочно-лимонное с карамельной присыпкой">
+            <img src="img/ice-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
 
             <p>
               375
@@ -209,8 +271,7 @@
           </li>
 
           <li>
-            <img src="img/ice-8.jpg" width="267" height="267"
-              alt="Сливочное с шоколадной стружкой">
+            <img src="img/ice-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
 
             <p>
               320
@@ -225,8 +286,7 @@
           </li>
 
           <li>
-            <img src="img/ice-9.jpg" width="267" height="267"
-              alt="Сливочно-ванильное с кусочками шоколада">
+            <img src="img/ice-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
 
             <p>
               440
@@ -241,8 +301,7 @@
           </li>
 
           <li>
-            <img src="img/ice-10.jpg" width="267" height="267"
-              alt="Сливочноe с ментоловым сиропом">
+            <img src="img/ice-10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
 
             <p>
               435
@@ -257,8 +316,7 @@
           </li>
 
           <li>
-            <img src="img/ice-11.jpg" width="267" height="267"
-              alt="Сливочное с кусочками черного шоколада">
+            <img src="img/ice-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
 
             <p>
               355
@@ -273,8 +331,7 @@
           </li>
 
           <li>
-            <img src="img/ice-12.jpg" width="267" height="267"
-              alt="Сливочное с мятным сиропом">
+            <img src="img/ice-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
 
             <p>
               420
