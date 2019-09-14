@@ -51,11 +51,14 @@
 
       <ul>
         <li>
+          <h2 class="visually-hidden">Кнопка поиска</h2>
+
           <button type="button">
-            <span class="loupe">Поиск</span>
+            <span class="loupe"></span>
           </button>
+
           <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="GET">
-            <h2>Поиск мороженого</h2>
+            <h2 class="visually-hidden">Поле для поиска мороженого</h2>
 
             <input type="search" name="search" placeholder="Что ищем?">
           </form>
@@ -65,18 +68,29 @@
           <button type="button">
             <span class="open">Вход</span>
           </button>
-          <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="POST">
-            <h2>Вход в личный кабинет</h2>
+          
+          <form action="http://echo.htmlacademy.ru" method="POST">
+            <h2 class="visually-hidden">Вход в личный кабинет</h2>
 
-            <input type="email" name="email" placeholder="email@example.com"><br>
+            <input type="email" name="email" placeholder="email@example.com">
 
-            <input type="password" name="password" placeholder="Пароль"><br>
+            <input type="password" name="password" placeholder="Пароль">
+
+            <div>
+
             <button type="submit">Войти</button>
+
+            <a href="#">Забыли пароль?</a>
+
+            <a href="#">Новая регистрация</a>
+
+          </div>
+
           </form>
         </li>
 
         <li>
-          <h2>Корзина товаров</h2>
+          <h2 class="visually-hidden">Корзина товаров</h2>
 
           <button type="button">
             <span class="basket">Пусто</span>
@@ -85,7 +99,7 @@
       </ul>
 
       <div>
-        <h2>Время работы и наш номер</h2>
+        <h2 class="visually-hidden">Время работы и наш номер</h2>
 
         <p>С 10 до 20, ежедневно</p>
 
@@ -95,7 +109,7 @@
 
     <main>
       <section>
-        <h1>Глейси-интернет магазин мороженого</h1>
+        <h1 class="visually-hidden">Глейси-интернет магазин мороженого</h1>
 
         <p>
           Крем-брюле и пломбир с малиновым джемом
@@ -134,7 +148,7 @@
       </section>
 
       <section>
-        <h2>Хиты продаж</h2>
+        <h2 class="visually-hidden">Хиты продаж</h2>
 
         <ul>
           <li>
@@ -210,7 +224,7 @@
       </section>
 
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
 
         <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
 
@@ -258,7 +272,7 @@
         </article>
 
         <section class="mailing">
-          <h2>Подписка на рассылку</h2>
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
 
           <p>
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
@@ -274,7 +288,7 @@
       </div>
 
       <section>
-        <h2>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
 
         <p>
           Адрес главного офиса<br>
@@ -296,26 +310,33 @@
     <footer>
       <ul>
         <li>
+          <h2 class="visually-hidden">Твиттер</h2>
+
           <a href="https://twitter.com">
-            <span class="twitter">Твиттер</span>
+            <span class="twitter"></span>
           </a>
         </li>
 
         <li>
+          <h2 class="visually-hidden">Инстаграм</h2>
+
           <a href="https://www.instagram.com">
-            <span class="instagram">Инстаграм</span>
+            <span class="instagram"></span>
           </a>
         </li>
 
         <li>
+          <h2 class="visually-hidden">Фейсбук</h2>
+
           <a href="https://uk-ua.facebook.com">
-            <span class="facebook">Фейсбук</span>
+            <span class="facebook"></span>
           </a>
         </li>
 
         <li>
+          <h2 class="visually-hidden">В контакте</h2>
           <a href="https://vk.com">
-            <span class="vk">В контакте</span>
+            <span class="vk"></span>
           </a>
         </li>
       </ul>
@@ -354,13 +375,15 @@
     <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="POST">
       <h2>Мы обязательно вам ответим!</h2>
 
-      <input type="text" name="name" placeholder="Имя Фамилия"><br>
+      <input type="text" name="name" placeholder="Имя Фамилия">
 
-      <input type="email" name="email" placeholder="email@example.com"><br>
+      <input type="email" name="email" placeholder="email@example.com">
 
-      <textarea name="text">В свободной форме</textarea><br>
+      <textarea name="text" placeholder="В свободной форме"></textarea>
 
       <button type="submit">Отправить</button>
+
+      <button type="button" class="visually-hidden">Закрыть</button>
     </form>
   </body>
 
