@@ -52,11 +52,14 @@
 
       <ul>
         <li>
+          <h2 class="visually-hidden">Кнопка поиска</h2>
+
           <button type="button">
-            <span class="loupe">Поиск</span>
+            <span class="loupe"></span>
           </button>
+
           <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="GET">
-            <h2>Поиск мороженого</h2>
+            <h2 class="visually-hidden">Поле для поиска мороженого</h2>
 
             <input type="search" name="search" placeholder="Что ищем?">
           </form>
@@ -66,46 +69,63 @@
           <button type="button">
             <span class="open">Вход</span>
           </button>
+          
           <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="POST">
             <h2>Вход в личный кабинет</h2>
 
-            <input type="email" name="email" placeholder="email@example.com"><br>
+            <input type="email" name="email" placeholder="email@example.com">
 
-            <input type="password" name="password" placeholder="Пароль"><br>
+            <input type="password" name="password" placeholder="Пароль">
+
             <button type="submit">Войти</button>
+
+            <a href="#">Забыли пароль?</a>
+
+            <a href="#">Новая регистрация</a>
           </form>
         </li>
 
         <li>
-          <h2>Корзина товаров</h2>
+          <h2 class="visually-hidden">Корзина товаров</h2>
 
           <button type="button">
             <span class="basket">2 Товара</span>
           </button>
 
           <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="POST">
-            <h2>Выбранный товар</h2>
+            <h2 class="visually-hidden">Выбранный товар</h2>
 
             <table>
               <tr>
                 <td>
-                  <img src="img/ice-1.jpg" alt="Пломбир с апельсиновым джемом">
+                  <button type="button" class="visually-hidden">Удалить товар</button>
                 </td>
 
-                <td>Пломбир с апельсиновым джемом</td>
+                <td>
+                  <img src="img/ice-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                </td>
+
+                <td>
+                  <a href="#">Пломбир с апельсиновым джемом</a>
+                </td>
 
                 <td>1,5 кг х 200 руб.</td>
 
                 <td>300 руб.</td>
               </tr>
-              <tr>
 
+              <tr>
                 <td>
-                  <img src="img/ice-3.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  <button type="button" class="visually-hidden">Удалить товар</button>
                 </td>
 
                 <td>
-                  Клубничный пломбир с присыпкой из белого шоколада
+                  <img src="img/ice-3.jpg" width="33" height="33"
+                    alt="Клубничный пломбир с присыпкой из белого шоколада">
+                </td>
+
+                <td>
+                  <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
                 </td>
 
                 <td>1,5 кг х 300 руб.</td>
@@ -114,13 +134,7 @@
               </tr>
 
               <tr>
-                <td></td>
-
-                <td></td>
-
-                <td></td>
-
-                <td>Итого:750 руб.</td>
+                <td colspan="5">Итого:750 руб.</td>
               </tr>
             </table>
 
@@ -130,7 +144,7 @@
       </ul>
 
       <div>
-        <h2>Время работы и наш номер</h2>
+        <h2 class="visually-hidden">Время работы и наш номер</h2>
 
         <p>С 10 до 20, ежедневно</p>
 
@@ -159,7 +173,7 @@
         <h1>Сливочное мороженое</h1>
 
         <form>
-          <h2>Фильтр</h2>
+          <h2 class="visually-hidden">Фильтр</h2>
 
           <!--Здесь будет форма-->
         </form>
@@ -363,26 +377,33 @@
     <footer>
       <ul>
         <li>
+          <h2 class="visually-hidden">Твиттер</h2>
+
           <a href="https://twitter.com">
-            <span class="twitter">Твиттер</span>
+            <span class="twitter"></span>
           </a>
         </li>
 
         <li>
+          <h2 class="visually-hidden">Инстаграм</h2>
+
           <a href="https://www.instagram.com">
-            <span class="instagram">Инстаграм</span>
+            <span class="instagram"></span>
           </a>
         </li>
 
         <li>
+          <h2 class="visually-hidden">Фейсбук</h2>
+
           <a href="https://uk-ua.facebook.com">
-            <span class="facebook">Фейсбук</span>
+            <span class="facebook"></span>
           </a>
         </li>
 
         <li>
+          <h2 class="visually-hidden">В контакте</h2>
           <a href="https://vk.com">
-            <span class="vk">В контакте</span>
+            <span class="vk"></span>
           </a>
         </li>
       </ul>
