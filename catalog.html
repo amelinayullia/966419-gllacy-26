@@ -172,10 +172,51 @@
       <section>
         <h1>Сливочное мороженое</h1>
 
-        <form>
+        <form action="http://echo.htmlacademy.ru" method="get">
           <h2 class="visually-hidden">Фильтр</h2>
 
-          <!--Здесь будет форма-->
+          <select name="sorting">
+            <option value="popular">По популярности</option>
+            <option value="inexpensive">Сначала недорогие</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="fat">Сначала дорогие</option>
+          </select>
+
+          <label for="cost">Цена: 100 руб. – 500 руб.</label>
+          <input type="range" id="cost" name="cost" min="100" max="500">
+
+          <p>Жирность:</p>
+
+          <input type="radio" id="zero" name="fat" value="0%">
+          <label for="zero">0%</label>
+
+          <input type="radio" id="ten" name="fat" value="10%" checked>
+          <label for="ten">до 10%</label>
+
+          <input type="radio" id="upthirty" name="fat" value="30%">
+          <label for="upthirty">до 30%</label>
+
+          <input type="radio" id="thirty" name="fat" value="30%">
+          <label for="thirty">выше 30%</label>
+
+          <p>Наполнители:</p>
+
+          <input type="checkbox" id="chocolate" name="chocolate">
+          <label for="chocolate">шоколадные</label>
+
+          <input type="checkbox" id="sugar" name="sugar">
+          <label for="sugar">сахарные присыпки</label>
+
+          <input type="checkbox" id="fruit" name="fruit">
+          <label for="fruit">фрукты</label>
+
+          <input type="checkbox" id="syrups" name="syrups">
+          <label for="syrups">сиропы</label>
+
+          <input type="checkbox" id="jams" name="jams">
+          <label for="jams">джемы</label>
+
+          <button type="submit">Применить</button>
         </form>
 
         <ul>
@@ -192,6 +233,8 @@
             <h2>
               <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </h2>
+
+            <button>Быстрый просмотр</button>
           </li>
 
           <li>
@@ -207,6 +250,8 @@
             <h2>
               <a href="#">Сливочно-кофейное с кусочками шоколада</a>
             </h2>
+
+            <button>Быстрый просмотр</button>
           </li>
 
           <li>
@@ -222,6 +267,8 @@
             <h2>
               <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             </h2>
+
+            <button>Быстрый просмотр</button>
           </li>
 
           <li>
@@ -237,6 +284,8 @@
             <h2>
               <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
             </h2>
+
+            <button>Быстрый просмотр</button>
           </li>
 
           <li>
@@ -252,6 +301,8 @@
             <h2>
               <a href="#">Сливочное с брусничным джемом</a>
             </h2>
+
+            <button>Быстрый просмотр</button>
           </li>
 
           <li>
@@ -267,6 +318,8 @@
             <h2>
               <a href="#">Сливочно-черничное с цельными ягодами черники</a>
             </h2>
+
+            <button>Быстрый просмотр</button>
           </li>
 
           <li>
@@ -282,6 +335,8 @@
             <h2>
               <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
             </h2>
+
+            <button>Быстрый просмотр</button>
           </li>
 
           <li>
@@ -297,6 +352,8 @@
             <h2>
               <a href="#">Сливочное с шоколадной стружкой</a>
             </h2>
+
+            <button>Быстрый просмотр</button>
           </li>
 
           <li>
@@ -312,6 +369,8 @@
             <h2>
               <a href="#">Сливочно-ванильное с кусочками шоколада</a>
             </h2>
+
+            <button>Быстрый просмотр</button>
           </li>
 
           <li>
@@ -327,6 +386,8 @@
             <h2>
               <a href="#">Сливочноe с ментоловым сиропом</a>
             </h2>
+
+            <button>Быстрый просмотр</button>
           </li>
 
           <li>
@@ -342,6 +403,8 @@
             <h2>
               <a href="#">Сливочное с кусочками черного шоколада</a>
             </h2>
+
+            <button>Быстрый просмотр</button>
           </li>
 
           <li>
@@ -357,19 +420,21 @@
             <h2>
               <a href="#">Сливочное с мятным сиропом</a>
             </h2>
+
+            <button>Быстрый просмотр</button>
           </li>
         </ul>
       </section>
 
       <div>
-        <ul>
-          <li><a href="#" class="leftsmall"></a></li>
+        <ul class="pagination">
+          <li><a href="#"></a></li>
           <li><a href="#">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li><a href="#">4</a></li>
           <li><a href="#">5</a></li>
-          <li><a href="#" class="rightsmall"></a></li>
+          <li><a href="#"></a></li>
         </ul>
       </div>
     </main>
