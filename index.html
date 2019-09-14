@@ -17,7 +17,7 @@
           <li>
             <a href="#">Каталог</a>
 
-            <ul class="visually-hidden">
+            <ul>
               <li>
                 <a href="#">Новинки</a>
               </li>
@@ -57,7 +57,7 @@
             <span class="loupe"></span>
           </button>
 
-          <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="GET">
+          <form action="http://echo.htmlacademy.ru" method="GET">
             <h2 class="visually-hidden">Поле для поиска мороженого</h2>
 
             <input type="search" name="search" placeholder="Что ищем?">
@@ -68,7 +68,7 @@
           <button type="button">
             <span class="open">Вход</span>
           </button>
-          
+
           <form action="http://echo.htmlacademy.ru" method="POST">
             <h2 class="visually-hidden">Вход в личный кабинет</h2>
 
@@ -78,13 +78,13 @@
 
             <div>
 
-            <button type="submit">Войти</button>
+              <button type="submit">Войти</button>
 
-            <a href="#">Забыли пароль?</a>
+              <a href="#">Забыли пароль?</a>
 
-            <a href="#">Новая регистрация</a>
+              <a href="#">Новая регистрация</a>
 
-          </div>
+            </div>
 
           </form>
         </li>
@@ -230,34 +230,31 @@
 
         <ul>
           <li>
-            <span class="icons">
+            <p>
               Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
-              и
-              проверенных временем технологий.
-            </span>
+              и проверенных временем технологий.
+            </p>
           </li>
 
           <li>
-            <span class="icons">
+            <p>
               Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
-              дополнительные
-              ингредиенты и добавки произведены из натурального, экологически чистого сырья.
-            </span>
+              дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+            </p>
           </li>
 
           <li>
-            <span class="icons">
+            <p>
               Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
               связывает долговременное сотрудничество.
-            </span>
+            </p>
           </li>
 
           <li>
-            <span class="icons">
+            <p>
               Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
-              мороженому
-              растаять в пути и позволяет сохранить превосходный вкус.
-            </span>
+              мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            </p>
           </li>
         </ul>
       </section>
@@ -279,7 +276,11 @@
             Обещаем не спамить и не слать всякой ненужной ерунды. Чесно=)
           </p>
 
-          <!--Здесь будет форма-->
+          <form action="http://echo.htmlacademy.ru" method="POST">
+            <input type="email" name="email" placeholder="email@example.com">
+
+            <button type="submit">Отправить</button>
+          </form>
         </section>
       </div>
 
@@ -291,15 +292,15 @@
         <h2 class="visually-hidden">Контакты</h2>
 
         <p>
-          Адрес главного офиса<br>
-          и офлайн магазина:<br>
-          ул. Большая Конюшенная<br>
+          Адрес главного офиса
+          и офлайн магазина:
+          ул. Большая Конюшенная
           19/8, Санкт-Петербург
         </p>
 
         <p>
-          Для заказов по телефону:<br>
-          8 812 450-25-25<br>
+          Для заказов по телефону:
+          8 812 450-25-25
           (с 10 до 20 ежедневно)
         </p>
 
@@ -372,7 +373,7 @@
       </div>
     </footer>
 
-    <form class="visually-hidden" action="http://echo.htmlacademy.ru" method="POST">
+    <form action="http://echo.htmlacademy.ru" method="POST">
       <h2>Мы обязательно вам ответим!</h2>
 
       <input type="text" name="name" placeholder="Имя Фамилия">
