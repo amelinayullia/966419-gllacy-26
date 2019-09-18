@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 22px;
+  font-weight: 700;
+
+  background-color: #849d8f;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.navigation {
+  line-height: 18px;
+}
+
+.navigation-list,
+.navigation-dropdown,
+.user-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-link {
+  color: #ffffff;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.navigation-link:hover,
+.navigation-link:active {
+  color: #323232;
+}
+
+.navigation-dropdown {
+  background-color: #f8f7f4;
+}
+
+.navigation-dropdown-link {
+  color: #323232;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.navigation-dropdown-link--important {
+  font-weight: 700;
+}
+
+.navigation-dropdown-link:hover {
+  background-color: #fbded7;
+}
+
+.navigation-dropdown-link:active {
+  background-color: #f6b5a5;
+}
+
+.user-button--loupe {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.user-button {
+  border: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.user-button:hover {
+  color: #323232;
+}
+
+.user-icon {
+  fill: #ffffff;
+}
+
+.user-button:hover .user-icon {
+  fill: #323232;
+}
+
+.advantages {
+  background-image: url("../img/wafer.jpg");
+  background-repeat: no-repeat;
+  color: #323232;
+}
+
+.advantages-text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.section-list {
+  list-style: none;
+  font-weight: 400;
+}
+
+.blog {
+  background-image: url("../img/strawberry.jpg");
+  background-repeat: no-repeat;
+}
+
+.blog-text {
+  font-weight: 500;
+  color: #323232;
+}
+
+.blog-link {
+  color: #323232;
+  font-family: Roboto;
+  line-height: 30px;
+}
+
+.subscribe {
+  background-image: url("../img/post.png");
+  background-repeat: no-repeat;
+}
+
+.subscribe-text {
+  color: #5a5a5a;
+  font-weight: 400;
+}
+
+.subscribe-input {
+  color: #323232;
+  line-height: 24px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+.button {
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0;
+  border: 0;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button:active {
+  box-shadow: inset 0 2px 2px #942718;
+  background-color: rgba(0, 0, 0, 0.07);
+  background-image: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+}
+
+.subscribe-button {
+  font-size: 18px;
+  line-height: 24px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.footer-list,
+.footer-nav-list {
+  list-style: none;
+}
+
+.footer-icon {
+  opacity: 0.8;
+}
+
+.footer-nav-icon {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-nav-icon--provider {
+  font-weight: 700;
+}
+
+.footer-nav-icon:hover {
+  color: #ffbc9e;
+}
+
+.footer-nav-icon:active {
+  color: #ffbc9e;
+}
+
+.footer-text {
+  color: #fefefe;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer-site-icon {
+  color: #fefefe;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
