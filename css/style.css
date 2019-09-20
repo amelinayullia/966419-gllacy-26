@@ -28,15 +28,24 @@ body {
 
 .navigation-list,
 .navigation-dropdown,
-.user-list {
+.user-list,
+.advantages-list,
+.bread-crumbs,
+.catalog-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .navigation-link {
+  text-decoration: none;
   color: #ffffff;
-  text-decoration-color: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navigation-link--catalog {
+  text-decoration: none;
+  background-color: #d07058;
 }
 
 .navigation-link:hover,
@@ -80,6 +89,11 @@ body {
   color: #ffffff;
 }
 
+.user-button--active {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
 .user-button:hover {
   color: #323232;
 }
@@ -90,6 +104,77 @@ body {
 
 .user-button:hover .user-icon {
   fill: #323232;
+}
+
+.text-time {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.text-phone {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.bread-crumbs-link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bread-crumbs-link--current {
+  border-bottom: none;
+}
+
+.main-navigation-product {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.catalog-title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+.ice-cream-title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ice-cream-image {
+  border-radius: 50%;
+}
+
+.ice-cream-cost {
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.ice-cream-kg {
+  font-size: 30px;
+}
+
+.ice-cream-link {
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  box-shadow: 0 1px 2px #ac1000;
+  background-color: #e84d37;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  display: none;
 }
 
 .advantages {
@@ -104,8 +189,7 @@ body {
   line-height: 30px;
 }
 
-.section-list {
-  list-style: none;
+.advantages-list {
   font-weight: 400;
 }
 
@@ -179,7 +263,8 @@ body {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
-  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-nav-icon--provider {
@@ -206,5 +291,6 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
-  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
