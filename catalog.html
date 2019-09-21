@@ -25,6 +25,7 @@
               <li>
                 <a class="navigation-dropdown-link navigation-dropdown-link--important" href="#">Новинки</a>
               </li>
+
               <li>
                 <a class="navigation-dropdown-link" href="catalog.html">Сливочное</a>
               </li>
@@ -92,6 +93,7 @@
             <input type="email" name="email" placeholder="email@example.com" />
 
             <input type="password" name="password" placeholder="Пароль" />
+
             <div>
               <button type="submit">Войти</button>
 
@@ -200,8 +202,8 @@
         <form action="http://echo.htmlacademy.ru" method="get">
           <h2 class="visually-hidden">Фильтр по мороженому</h2>
 
-          <fieldset>
-            <legend>Сортировка:</legend>
+          <fieldset class="catalog-filter">
+            <legend class="catalog-filter-class">Сортировка:</legend>
 
             <select class="catalog-sorting" name="sorting">
               <option value="popular" selected>По популярности</option>
@@ -211,14 +213,14 @@
             </select>
           </fieldset>
 
-          <fieldset>
-            <legend>Цена: 100 руб. – 500 руб.</legend>
+          <fieldset class="catalog-filter">
+            <legend class="catalog-filter-class">Цена: 100 руб. – 500 руб.</legend>
 
             <input type="range" id="cost" name="cost" min="0" max="1000" value="100" />
           </fieldset>
 
-          <fieldset>
-            <legend>Жирность:</legend>
+          <fieldset class="catalog-filter">
+            <legend class="catalog-filter-class">Жирность:</legend>
 
             <input type="radio" id="zero" name="fat" value="0" />
             <label for="zero">0%</label>
@@ -233,8 +235,8 @@
             <label for="thirty">выше 30%</label>
           </fieldset>
 
-          <fieldset>
-            <legend>Наполнители:</legend>
+          <fieldset class="catalog-filter">
+            <legend class="catalog-filter-class">Наполнители:</legend>
 
             <input type="checkbox" id="chocolate" name="chocolate" checked />
             <label for="chocolate">шоколадные</label>
@@ -252,7 +254,7 @@
             <label for="jams">джемы</label>
           </fieldset>
 
-          <button type="submit">Применить</button>
+          <button class="apply-filter" type="submit">Применить</button>
         </form>
 
         <ul class="catalog-list">
@@ -464,13 +466,27 @@
 
       <div>
         <ul class="pagination">
-          <li><a href="#"></a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#"></a></li>
+          <li class="pagination-item">
+            <a class="control-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+                <path fill="#ffffff"
+                  d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z" />
+              </svg>
+            </a>
+          </li>
+          <li class="pagination-item"><a class="pagination-link" href="#">1</a></li>
+          <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+          <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+          <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
+          <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
+          <li class="pagination-item">
+            <a class="control-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+                <path fill="#ffffff"
+                  d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z" />
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
     </main>
