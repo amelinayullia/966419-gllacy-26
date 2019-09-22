@@ -174,7 +174,7 @@ body {
 background-color: #ffffff;
 }
 
-.free-gift {
+.free-gift-subtitle {
   font-size: 35px;
   line-height: 1.17;
   text-align: left;
@@ -183,6 +183,7 @@ background-color: #ffffff;
 .free-gift-text {
   font-size: 18px;
   line-height: 1.22;
+  text-align: left;
 }
 
 .button--free-gift-add {
