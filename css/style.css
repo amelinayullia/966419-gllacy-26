@@ -22,8 +22,33 @@ body {
   overflow: hidden;
 }
 
+.page-warpper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 8px;
+  position: relative;
+}
+
+.header-logo {
+  display: flex;
+  margin-right: 24px;
+}
+
 .navigation {
   line-height: 18px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
 }
 
 .navigation-list,
@@ -45,6 +70,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-right: 28px;
 }
 
 .navigation-link--catalog {
@@ -59,6 +85,7 @@ body {
 
 .navigation-dropdown {
   background-color: #f8f7f4;
+  display: none;
 }
 
 .navigation-dropdown-link {
@@ -79,6 +106,20 @@ body {
 
 .navigation-dropdown-link:active {
   background-color: #f6b5a5;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.user-item {
+  display: flex;
+  padding-left: 8px;
+  margin-top: 12px;
+  margin-bottom: 18px;
 }
 
 .user-button--loupe {
@@ -110,15 +151,35 @@ body {
   fill: #323232;
 }
 
+.user-popup {
+  display: none;
+}
+
+.header-aside {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 27px;
+}
 
 .text-time {
   font-size: 14px;
   line-height: 16px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0px;
 }
 
 .text-phone {
   font-size: 22px;
   line-height: 24px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 5px;
 }
 
 .slider {
@@ -296,26 +357,62 @@ background-color: #ffffff;
   background-image: url("../img/wafer.jpg");
   background-repeat: no-repeat;
   color: #323232;
+  border-radius: 15px;
+  margin-left: 27px;
+  margin-right: 27px;
+  padding-top: 29px;
+  padding-left: 20px;
+  padding-right: 33px;
+  padding-bottom: 26px;
 }
 
 .advantages-text {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
+  margin: 0;
 }
 
 .advantages-list {
   font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 480px;
+  margin-top: 10px;
+}
+
+.advantages-item:nth-of-type(even) {
+  margin-left: 33px;
+}
+
+.blog-container{
+display: flex;
+margin-left: 27px;
+margin-right: 27px;
+margin-top: 40px;
+margin-bottom: 40px;
+justify-content: space-between;
 }
 
 .blog {
   background-image: url("../img/strawberry.jpg");
   background-repeat: no-repeat;
+  border-radius: 15px;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  width: 520px;
 }
 
 .blog-text {
   font-weight: 500;
   color: #323232;
+  margin: 0;
+  margin-bottom: 13px;
 }
 
 .blog-link {
@@ -324,14 +421,27 @@ background-color: #ffffff;
   line-height: 30px;
 }
 
+.blog-subtitle {
+  width: 290px;
+  margin: 0;
+}
+
 .subscribe {
   background-image: url("../img/post.png");
   background-repeat: no-repeat;
+  border-radius: 15px;
+  padding-left: 21px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  padding-right: 21px;
+  width: 520px;
 }
 
 .subscribe-text {
   color: #5a5a5a;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 .subscribe-input {
@@ -363,6 +473,7 @@ background-color: #ffffff;
 .contacts {
   text-align: left;
   color: #323232;
+  display: none;
 }
 
 .contacts-text {
@@ -387,6 +498,38 @@ background-color: #ffffff;
 
 .button--feedback {
   text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-bottom: 26px;
+}
+
+.footer-list {
+  display: flex;
+  margin-top: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  display: flex;
+  padding-right: 10px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 19px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer-icon {
@@ -456,6 +599,8 @@ background-color: #ffffff;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+  margin: 0;
+  margin-top: 8px;
 }
 
 .footer-site-icon {
@@ -465,4 +610,8 @@ background-color: #ffffff;
   line-height: 18px;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal {
+  display: none;
 }
