@@ -22,7 +22,12 @@ body {
   overflow: hidden;
 }
 
-.page-warpper {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container, footer {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -32,7 +37,6 @@ body {
   padding-left: 26px;
   padding-right: 26px;
   padding-top: 8px;
-  position: relative;
 }
 
 .header-logo {
@@ -156,9 +160,6 @@ body {
 }
 
 .header-aside {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
   top: 100%;
   right: 27px;
 }
