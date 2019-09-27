@@ -11,117 +11,119 @@
   </head>
 
   <body>
-    <div class="page-warpper">
-      <header class="header">
-        <a class="header-logo">
-          <img class="header-image" src="img/logo.svg" width="154" height="64" alt="Логотип сайта Глейси" />
-        </a>
+    <div class="container">
+      <header>
+        <div class="header">
+          <a class="header-logo">
+            <img class="header-image" src="img/logo.svg" width="154" height="64" alt="Логотип сайта Глейси" />
+          </a>
 
-        <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation_item">
-              <a class="navigation-link" href="#">Каталог</a>
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation_item">
+                <a class="navigation-link" href="#">Каталог</a>
 
-              <ul class="navigation-dropdown">
-                <li>
-                  <a class="navigation-dropdown-link navigation-dropdown-link--important" href="#">Новинки</a>
-                </li>
+                <ul class="navigation-dropdown">
+                  <li>
+                    <a class="navigation-dropdown-link navigation-dropdown-link--important" href="#">Новинки</a>
+                  </li>
 
-                <li>
-                  <a class="navigation-dropdown-link" href="catalog.html">Сливочное</a>
-                </li>
+                  <li>
+                    <a class="navigation-dropdown-link" href="catalog.html">Сливочное</a>
+                  </li>
 
-                <li>
-                  <a class="navigation-dropdown-link" href="#">Щербеты</a>
-                </li>
+                  <li>
+                    <a class="navigation-dropdown-link" href="#">Щербеты</a>
+                  </li>
 
-                <li>
-                  <a class="navigation-dropdown-link" href="#">Фруктовый лед</a>
-                </li>
+                  <li>
+                    <a class="navigation-dropdown-link" href="#">Фруктовый лед</a>
+                  </li>
 
-                <li>
-                  <a class="navigation-dropdown-link" href="#">Мелорин</a>
-                </li>
-              </ul>
+                  <li>
+                    <a class="navigation-dropdown-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigation_item">
+                <a class="navigation-link" href="#">Доставка и оплата</a>
+              </li>
+
+              <li class="navigation_item">
+                <a class="navigation-link" href="#">О Компании</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="user-list">
+            <li class="user-item">
+              <button class="user-button user-button--loupe" type="button">
+                <span class="visually-hidden">Кнопка поиска</span>
+
+                <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="17" height="17" viewBox="0 0 17 17">
+                  <path
+                    d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
+                </svg>
+              </button>
+
+              <form class="user-popup" action="http://echo.htmlacademy.ru" method="GET">
+                <h2 class="visually-hidden">Поле для поиска мороженого</h2>
+
+                <input type="search" name="search" placeholder="Что ищем?" />
+              </form>
             </li>
 
-            <li class="navigation_item">
-              <a class="navigation-link" href="#">Доставка и оплата</a>
+            <li class="user-item">
+              <button class="user-button" type="button">
+                <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="21" height="19" viewBox="0 0 21 19">
+                  <g>
+                    <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
+                    <path
+                      d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
+                  </g>
+                </svg>
+
+                <span>Вход</span>
+              </button>
+
+              <form class="user-popup" action="http://echo.htmlacademy.ru" method="POST">
+                <h2 class="visually-hidden">Вход в личный кабинет</h2>
+
+                <input type="email" name="email" placeholder="email@example.com" />
+
+                <input type="password" name="password" placeholder="Пароль" />
+
+                <div>
+                  <button class="button" type="button">Войти</button>
+
+                  <a href="#">Забыли пароль?</a>
+
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </form>
             </li>
 
-            <li class="navigation_item">
-              <a class="navigation-link" href="#">О Компании</a>
+            <li class="user-item">
+              <h2 class="visually-hidden">Корзина товаров</h2>
+
+              <button class="user-button" type="button">
+                <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+                  <g>
+                    <path
+                      d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
+                    <circle cx="6.984" cy="18" r="2" />
+                    <circle cx="15.984" cy="18" r="2" />
+                  </g>
+                </svg>
+
+                <span>Пусто</span>
+              </button>
             </li>
           </ul>
-        </nav>
-
-        <ul class="user-list">
-          <li class="user-item">
-            <button class="user-button user-button--loupe" type="button">
-              <span class="visually-hidden">Кнопка поиска</span>
-
-              <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="17" height="17" viewBox="0 0 17 17">
-                <path
-                  d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
-              </svg>
-            </button>
-
-            <form class="user-popup" action="http://echo.htmlacademy.ru" method="GET">
-              <h2 class="visually-hidden">Поле для поиска мороженого</h2>
-
-              <input type="search" name="search" placeholder="Что ищем?" />
-            </form>
-          </li>
-
-          <li class="user-item">
-            <button class="user-button" type="button">
-              <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="21" height="19" viewBox="0 0 21 19">
-                <g>
-                  <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
-                  <path
-                    d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
-                </g>
-              </svg>
-
-              <span>Вход</span>
-            </button>
-
-            <form class="user-popup" action="http://echo.htmlacademy.ru" method="POST">
-              <h2 class="visually-hidden">Вход в личный кабинет</h2>
-
-              <input type="email" name="email" placeholder="email@example.com" />
-
-              <input type="password" name="password" placeholder="Пароль" />
-
-              <div>
-                <button class="button" type="button">Войти</button>
-
-                <a href="#">Забыли пароль?</a>
-
-                <a href="#">Новая регистрация</a>
-              </div>
-            </form>
-          </li>
-
-          <li class="user-item">
-            <h2 class="visually-hidden">Корзина товаров</h2>
-
-            <button class="user-button" type="button">
-              <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-                <g>
-                  <path
-                    d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
-                  <circle cx="6.984" cy="18" r="2" />
-                  <circle cx="15.984" cy="18" r="2" />
-                </g>
-              </svg>
-
-              <span>Пусто</span>
-            </button>
-          </li>
-        </ul>
+        </div>
 
         <div class="header-aside">
           <h2 class="visually-hidden">Время работы и наш номер</h2>
@@ -392,108 +394,109 @@
             </form>
           </section>
         </div>
+    </div>
 
-        <div>
-          <img src="img/map.png" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" />
-        </div>
+    <div>
+      <img src="img/map.png" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" />
+    </div>
 
-        <section class="contacts">
-          <h2 class="visually-hidden">Контакты</h2>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
 
-          <p class="contacts-text">
-            Адрес главного офиса и офлайн магазина: <span class="contacts-text-address">ул. Большая Конюшенная 19/8,
-              Санкт-Петербург</span>
-          </p>
+      <p class="contacts-text">
+        Адрес главного офиса и офлайн магазина: <span class="contacts-text-address">ул. Большая Конюшенная 19/8,
+          Санкт-Петербург</span>
+      </p>
 
-          <p class="contacts-text">
-            Для заказов по телефону: <span class="contacts-text-address contacts-text-address--phone">8 812
-              450-25-25</span><span class="contacts-text contacts-text--time">(с 10 до 20 ежедневно)</span>
-          </p>
+      <p class="contacts-text">
+        Для заказов по телефону: <span class="contacts-text-address contacts-text-address--phone">8 812
+          450-25-25</span><span class="contacts-text contacts-text--time">(с 10 до 20 ежедневно)</span>
+      </p>
 
-          <a class="button button--feedback" href="#">Форма обратной связи</a>
-        </section>
-      </main>
+      <a class="button button--feedback" href="#">Форма обратной связи</a>
+    </section>
+    </main>
 
-      <footer class="footer">
-        <ul class="footer-list">
-          <li class="footer-item">
-            <a class="footer-icon footer-icon--twitter" href="https://twitter.com">
-              <span class="visually-hidden">Твиттер</span>
+    <footer class="footer">
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a class="footer-icon footer-icon--twitter" href="https://twitter.com">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+
+        <li class="footer-item">
+          <a class="footer-icon footer-icon--instagram" href="https://www.instagram.com">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+
+        <li class="footer-item">
+          <a class="footer-icon footer-icon--fb" href="https://uk-ua.facebook.com">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+
+        <li class="footer-item">
+          <a class="footer-icon footer-icon--vk" href="https://vk.com">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+      </ul>
+
+      <nav class="footer-nav">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item-1">
+            <a class="footer-nav-icon footer-nav-icon--provider" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13">
+                <path fill="#FFF"
+                  d="M10.799 0c-1.35 0-2.551.65-3.3 1.661A4.097 4.097 0 0 0 4.199 0C1.875 0 0 1.806 0 4.044 0 7.223 7.499 13 7.499 13s7.499-5.777 7.499-8.956C14.998 1.806 13.123 0 10.799 0z" />
+              </svg>
+
+              Для поставщиков
             </a>
           </li>
 
-          <li class="footer-item">
-            <a class="footer-icon footer-icon--instagram" href="https://www.instagram.com">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
+          <li class="footer-nav-item-2">
+            <a class="footer-nav-icon" href="#">О производстве</a>
           </li>
 
-          <li class="footer-item">
-            <a class="footer-icon footer-icon--fb" href="https://uk-ua.facebook.com">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
+          <li class="footer-nav-item-3">
+            <a class="footer-nav-icon" href="#">Наши документы</a>
           </li>
 
-          <li class="footer-item">
-            <a class="footer-icon footer-icon--vk" href="https://vk.com">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
+          <li class="footer-nav-item-4">
+            <a class="footer-nav-icon" href="#">Экологические стандарты</a>
           </li>
         </ul>
+      </nav>
 
-        <nav class="footer-nav">
-          <ul class="footer-nav-list">
-            <li class="footer-nav-item-1">
-              <a class="footer-nav-icon footer-nav-icon--provider" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13">
-                  <path fill="#FFF"
-                    d="M10.799 0c-1.35 0-2.551.65-3.3 1.661A4.097 4.097 0 0 0 4.199 0C1.875 0 0 1.806 0 4.044 0 7.223 7.499 13 7.499 13s7.499-5.777 7.499-8.956C14.998 1.806 13.123 0 10.799 0z" />
-                </svg>
+      <div>
+        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy" />
+        </a>
 
-                Для поставщиков
-              </a>
-            </li>
+        <p class="footer-text">
+          Сделано в
+          <a class="footer-site-icon" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          2019
+        </p>
+      </div>
+    </footer>
 
-            <li class="footer-nav-item-2">
-              <a class="footer-nav-icon" href="#">О производстве</a>
-            </li>
+    <form class="modal" action="http://echo.htmlacademy.ru" method="POST">
+      <h2>Мы обязательно вам ответим!</h2>
 
-            <li class="footer-nav-item-3">
-              <a class="footer-nav-icon" href="#">Наши документы</a>
-            </li>
+      <input type="text" name="name" placeholder="Имя Фамилия" />
 
-            <li class="footer-nav-item-4">
-              <a class="footer-nav-icon" href="#">Экологические стандарты</a>
-            </li>
-          </ul>
-        </nav>
+      <input type="email" name="email" placeholder="email@example.com" />
 
-        <div>
-          <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy" />
-          </a>
+      <textarea name="text" placeholder="В свободной форме"></textarea>
 
-          <p class="footer-text">
-            Сделано в
-            <a class="footer-site-icon" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-            2019
-          </p>
-        </div>
-      </footer>
+      <button type="submit">Отправить</button>
 
-      <form class="modal" action="http://echo.htmlacademy.ru" method="POST">
-        <h2>Мы обязательно вам ответим!</h2>
-
-        <input type="text" name="name" placeholder="Имя Фамилия" />
-
-        <input type="email" name="email" placeholder="email@example.com" />
-
-        <textarea name="text" placeholder="В свободной форме"></textarea>
-
-        <button type="submit">Отправить</button>
-
-        <button type="button" class="visually-hidden">Закрыть</button>
-      </form>
+      <button type="button" class="visually-hidden">Закрыть</button>
+    </form>
     </div>
   </body>
 
