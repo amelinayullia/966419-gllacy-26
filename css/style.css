@@ -165,11 +165,6 @@ body {
   display: none;
 }
 
-.header-aside {
-  top: 100%;
-  right: 27px;
-}
-
 .text-time {
   font-size: 14px;
   line-height: 16px;
@@ -335,9 +330,14 @@ background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
+  margin-right: 26px;
 }
 
-li:nth-child(4n) .ice-cream-image {
+.ice-cream {
+  margin-right: 26px;
+}
+
+li:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -355,9 +355,6 @@ li:nth-child(4n) .ice-cream-image {
 
 .ice-cream-image {
   border-radius: 50%;
-  margin: 0;
-  padding: 0;
-  margin-right: 26px;
 }
 
 .ice-cream-cost {
