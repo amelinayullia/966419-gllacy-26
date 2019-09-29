@@ -197,12 +197,20 @@ body {
   background-image: url("../img/two-ice-1.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  min-height: 582px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .slider-description {
   font-size: 60px;
   line-height: 1;
   text-align: center;
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 209px;
+  padding-right: 191px;
 }
 
 .button {
@@ -231,6 +239,12 @@ body {
   font-size: 32px;
   line-height: 1.38;
   text-align: center;
+  margin-bottom: 41px;
+  align-self: center;
+}
+
+.slider-list {
+  display: flex;
 }
 
 .slider-switch {
@@ -240,27 +254,59 @@ body {
   border-radius: 50%;
   border: 2px solid #ffffff;
   background-color: transparent;
+  margin-right: auto;
 }
 
 .slider-switch--active {
-background-color: #ffffff;
+  background-color: #ffffff;
+}
+
+.free-gift-container {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.free-gift-section-1 {
+  background-image: url("../img/raspberries.jpg");
+  background-repeat: no-repeat;
+  max-width: 560px;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.free-gift-section-2 {
+  background-image: url("../img/chocolate.jpg");
+  background-repeat: no-repeat;
+  max-width: 560px;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .free-gift-subtitle {
   font-size: 35px;
   line-height: 1.17;
   text-align: left;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .free-gift-text {
   font-size: 18px;
   line-height: 1.22;
   text-align: left;
+  margin: 0;
+  margin-bottom: 45px;
 }
 
 .button--free-gift-add {
   text-align: center;
   text-decoration: none;
+  margin-left: auto;
 }
 
 .bread-crumbs {
@@ -333,6 +379,26 @@ background-color: #ffffff;
   line-height: 41px;
   margin: 0;
   margin-bottom: 30px;
+}
+.catalog-filter-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-filter {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 14px;
+}
+
+.catalog-filter-class {
+  margin-left: 16px;
+  margin-bottom: 6px;
+}
+
+.catalog-sorting {
+  margin-bottom: 18px;
 }
 
 .catalog-list {
@@ -441,7 +507,6 @@ justify-content: space-between;
   padding-top: 26px;
   padding-bottom: 26px;
   min-width: 560px;
-  box-sizing: border-box;
 }
 
 .blog-text {
@@ -470,7 +535,7 @@ justify-content: space-between;
   padding-top: 33px;
   padding-bottom: 33px;
   padding-right: 21px;
-  width: 520px;
+  max-width: 560px;
 }
 
 .subscribe-text {
@@ -486,8 +551,27 @@ justify-content: space-between;
   border: 1px solid rgba(178, 178, 178, 0.52);
 }
 
+.map {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.pagination {
+  display: flex;
+  margin-top: 83px;
+  margin-bottom: 30px;
+}
+
+.pagination-conteiner {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+}
+
 .pagination-item {
   text-align: right;
+  list-style: none;
 }
 
 .pagination-link {
