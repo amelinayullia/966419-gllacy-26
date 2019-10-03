@@ -20,26 +20,28 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation_item">
-              <a class="navigation-link" href="#">Каталог</a>
+              <a class="navigation-link navigation-link--index" href="#">Каталог</a>
 
               <ul class="navigation-dropdown">
-                <li>
+                <li class="navigation-dropdown-item">
                   <a class="navigation-dropdown-link navigation-dropdown-link--important" href="#">Новинки</a>
                 </li>
 
-                <li>
+                <li class="navigation-dropdown-border"></li>
+
+                <li class="navigation-dropdown-item">
                   <a class="navigation-dropdown-link" href="catalog.html">Сливочное</a>
                 </li>
 
-                <li>
+                <li class="navigation-dropdown-item">
                   <a class="navigation-dropdown-link" href="#">Щербеты</a>
                 </li>
 
-                <li>
+                <li class="navigation-dropdown-item">
                   <a class="navigation-dropdown-link" href="#">Фруктовый лед</a>
                 </li>
 
-                <li>
+                <li class="navigation-dropdown-item">
                   <a class="navigation-dropdown-link" href="#">Мелорин</a>
                 </li>
               </ul>
@@ -57,9 +59,8 @@
 
         <ul class="user-list">
           <li class="user-item">
+            <h2 class="visually-hidden">Кнопка поиска</h2>
             <button class="user-button user-button--loupe" type="button">
-              <span class="visually-hidden">Кнопка поиска</span>
-
               <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 width="17" height="17" viewBox="0 0 17 17">
                 <path
@@ -67,17 +68,17 @@
               </svg>
             </button>
 
-            <form class="user-popup" action="http://echo.htmlacademy.ru" method="GET">
+            <form class="user-popup user-popup--search" action="http://echo.htmlacademy.ru" method="GET">
               <h2 class="visually-hidden">Поле для поиска мороженого</h2>
 
-              <input type="search" name="search" placeholder="Что ищем?" />
+              <input class="user-popup-search" type="search" name="search" placeholder="Что ищем?" />
             </form>
           </li>
 
           <li class="user-item">
-            <button class="user-button" type="button">
-              <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="21" height="19" viewBox="0 0 21 19">
+            <button class="user-button user-button--login" type="button">
+              <svg class="user-icon-login" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="21" height="19">
                 <g>
                   <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z" />
                   <path
@@ -85,22 +86,22 @@
                 </g>
               </svg>
 
-              <span>Вход</span>
+              <span class="user-text--login">Вход</span>
             </button>
 
-            <form class="user-popup" action="http://echo.htmlacademy.ru" method="POST">
+            <form class="user-popup user-popup--login" action="http://echo.htmlacademy.ru" method="POST">
               <h2 class="visually-hidden">Вход в личный кабинет</h2>
 
-              <input type="email" name="email" placeholder="email@example.com" />
+              <input class="user-popup-email" type="email" name="email" placeholder="email@example.com" />
 
-              <input type="password" name="password" placeholder="Пароль" />
+              <input class="user-popup-password" type="password" name="password" placeholder="Пароль" />
 
-              <div>
-                <button class="button" type="button">Войти</button>
+              <div class="user-popup-row">
+                <button class="button user-popup--button" type="button">Войти</button>
 
-                <a href="#">Забыли пароль?</a>
+                <a class="user-popup-link user-popup-link--1" href="#">Забыли пароль?</a>
 
-                <a href="#">Новая регистрация</a>
+                <a class="user-popup-link user-popup-link--2" href="#">Новая регистрация</a>
               </div>
             </form>
           </li>
@@ -108,17 +109,8 @@
           <li class="user-item">
             <h2 class="visually-hidden">Корзина товаров</h2>
 
-            <button class="user-button" type="button">
-              <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-                <g>
-                  <path
-                    d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
-                  <circle cx="6.984" cy="18" r="2" />
-                  <circle cx="15.984" cy="18" r="2" />
-                </g>
-              </svg>
-
-              <span>Пусто</span>
+            <button class="user-button user-button--basket" type="button">
+              <span class="user-text-basket">Пусто</span>
             </button>
           </li>
         </ul>
