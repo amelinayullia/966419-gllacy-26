@@ -71,7 +71,7 @@
             <form class="user-popup user-popup--search" action="http://echo.htmlacademy.ru" method="GET">
               <h2 class="visually-hidden">Поле для поиска мороженого</h2>
 
-              <input class="user-popup-search" type="search" name="search" placeholder="Что ищем?" />
+              <input class="user-popup-input" type="search" name="search" placeholder="Что ищем?" />
             </form>
           </li>
 
@@ -192,11 +192,9 @@
             <img class="ice-cream-image" src="img/ice-1.jpg" width="267" height="267"
               alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" />
 
-            <p class="ice-cream-cost">
-              310₽
+            <p class="ice-cream-cost">310₽</p>
 
-              <span class="ice-cream-kg">/кг</span>
-            </p>
+            <p class="ice-cream-kg">/кг</p>
 
             <h2 class="ice-cream-title">
               <a class="ice-cream-title--link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -219,11 +217,9 @@
             <img class="ice-cream-image" src="img/ice-2.jpg" width="267" height="267"
               alt="Сливочно-кофейное с кусочками шоколада" />
 
-            <p class="ice-cream-cost">
-              310₽
+            <p class="ice-cream-cost">310₽</p>
 
-              <span class="ice-cream-kg">/кг</span>
-            </p>
+            <p class="ice-cream-kg">/кг</p>
 
             <h2 class="ice-cream-title">
               <a class="ice-cream-title--link" href="#">Сливочно-кофейное с кусочками шоколада</a>
@@ -245,11 +241,9 @@
             <img class="ice-cream-image" src="img/ice-3.jpg" width="267" height="267"
               alt="Сливочно-клубничное с присыпкой из белого шоколада" />
 
-            <p class="ice-cream-cost">
-              310₽
+            <p class="ice-cream-cost">310₽</p>
 
-              <span class="ice-cream-kg">/кг</span>
-            </p>
+            <p class="ice-cream-kg">/кг</p>
 
             <h2 class="ice-cream-title">
               <a class="ice-cream-title--link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -272,11 +266,9 @@
             <img class="ice-cream-image" src="img/ice-4.png" width="267" height="267"
               alt="Сливочное крем-брюле с карамельной подливкой" />
 
-            <p class="ice-cream-cost">
-              310₽
-
-              <span class="ice-cream-kg">/кг</span>
-            </p>
+            <p class="ice-cream-cost">310₽</p>
+            
+            <p class="ice-cream-kg">/кг</p>
 
             <h2 class="ice-cream-title">
               <a class="ice-cream-title--link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -447,23 +439,21 @@
       </div>
     </footer>
 
-    <form class="modal container" action="http://echo.htmlacademy.ru" method="POST">
-      <div class="modal-form">
-        <h2 class="modal-title">Мы обязательно вам ответим!</h2>
+    <div class="modal">
+      <form class="modal-form" action="http://echo.htmlacademy.ru" method="POST">
+          <h2 class="modal-title">Мы обязательно вам ответим!</h2>
 
-        <input class="modal-name" type="text" name="name" placeholder="Как вас зовут?" />
+          <input class="modal-name" type="text" name="name" placeholder="Как вас зовут?" />
 
-        <input class="modal-email" type="email" name="email" placeholder="Ваша почта для ответа?" />
+          <input class="modal-email" type="email" name="email" placeholder="Ваша почта для ответа?" />
 
-        <textarea class="modal-text" name="text" placeholder="Напишите что-нибудь..."></textarea>
+          <textarea class="modal-text" name="text" placeholder="Напишите что-нибудь..."></textarea>
 
-        <button class="button modal--button" type="submit">Отправить</button>
-      </div>
+          <button class="button modal--button" type="submit">Отправить</button>
 
-      <div class="modal-button-close">
-        <button type="button" class="visually-hidden">Закрыть</button>
-      </div>
-    </form>
+          <button class="modal-button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      </form>
+    </div>
   </body>
 
 </html>
