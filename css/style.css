@@ -19,6 +19,7 @@ body {
   font-weight: 700;
 
   background-color: #849d8f;
+  min-width: 1200px;
 }
 
 .visually-hidden {
@@ -33,14 +34,14 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   padding: 0 27px;
   margin: 0 auto;
 }
 
 .header {
   display: flex;
-  padding-top: 8px;
+  padding-top: 7px;
 }
 
 .header-logo {
@@ -526,50 +527,46 @@ body {
   bottom: 22px;
 }
 
-.header-aside {
-  position: relative;
-}
-
 .text-time {
   font-size: 14px;
   line-height: 16px;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0px;
   margin: 0px;
+  text-align: end;
 }
 
 .text-phone {
   font-size: 22px;
   line-height: 24px;
-  padding: 0px;
   margin: 0px;
   margin-top: 3px;
-  position: absolute;
-  right: 0;
+  text-align: end;
+}
+
+.slider-wrapper {
+  min-width: 940px;
+  min-height: 546px;
 }
 
 .slider {
-  background-image: url("../img/two-ice.png");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  min-height: 582px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   position: relative;
-  bottom: 4px;
+  padding-top: 276px;
+  text-align: center;
+  color: #ffffff;
 }
 
-.slider-description {
-  font-size: 60px;
-  line-height: 1;
-  text-align: center;
-  align-self: center;
-  padding-left: 231px;
-  padding-right: 231px;
+.slider-list {
   margin: 0;
-  padding-bottom: 29px;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
 }
 
 .button {
@@ -594,25 +591,32 @@ body {
 }
 
 .button--slider {
+  display: inline-block;
+  padding: 12px 42px;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   font-size: 32px;
   line-height: 1.38;
+  color: #ffffff;
   text-align: center;
-  align-self: center;
+  vertical-align: top;
   border: none;
-  padding: 10px 43px;
-  border-radius: 35px;
-  margin-bottom: 62px;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 .slider-toggle {
   position: absolute;
-  bottom: 80px;
+  bottom: 14px;
+  left: 0;
+  z-index: 20;
+  font-size: 0;
 }
 
 .slider-toggle-list {
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .slider-toggle-button {
@@ -622,22 +626,26 @@ body {
   border-radius: 50%;
   border: 2px solid #ffffff;
   background-color: transparent;
-  margin-right: auto;
-}
-
-.slider-toggle-item {
-  padding-right: 8px;
+  margin-right: 8px;
 }
 
 .slider-toggle-button--active {
   background-color: #ffffff;
 }
 
+.slide {
+  display: none;
+}
+
+.slide--active {
+  display: block;
+}
+
 .free-gift-container {
   display: flex;
   margin-bottom: 40px;
   justify-content: space-between;
-  margin-top: -25px;
+  margin-top: -15px;
 }
 
 .free-gift-section-1 {
