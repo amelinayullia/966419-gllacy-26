@@ -217,50 +217,45 @@ body {
 }
 
 .user-button--login {
-  min-width: 93px;
   border-radius: 15px;
 }
 
 .user-text--login {
-  position: absolute;
-  top: 8px;
-  right: 16px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   color: #ffffff;
-  text-align: right;
-  margin: 0 auto;
+  vertical-align: text-top;
+  padding-left: 44px;
+  padding-right: 17px;
 }
 
 .user-icon-login {
-  position: absolute;
-  top: 6px;
-  left: 17px;
   fill:#ffffff;
+  position: absolute;
+  left: 17px;
 }
 
 .user-icon-basket {
   position: absolute;
   top: 6px;
-  left: 17px;
+  left: 16px;
   fill:#ffffff;
 }
 
 .user-button--basket {
-  min-width: 100px;
   border-radius: 15px;
 }
 
 .user-text-basket {
-  position: absolute;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   text-align: left;
   color: #ffffff;
-  top: 8px;
-  right: 17px;
+  padding-left: 44px;
+  padding-right: 17px;
+  vertical-align: text-top;
 }
 
 .user-text--basketred {
@@ -648,30 +643,24 @@ body {
   margin-top: -15px;
 }
 
-.free-gift-section-1 {
-  background-image: url("../img/raspberries.jpg");
+.free-gift-section {
   background-repeat: no-repeat;
   max-width: 560px;
   border-radius: 15px;
-  padding-top: 17px;
+  padding-top: 15px;
   padding-bottom: 23px;
   padding-left: 19px;
   padding-right: 20px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.free-gift-section-2 {
+.free-gift-section--1 {
+  background-image: url("../img/raspberries.jpg");
+}
+
+.free-gift-section--2 {
   background-image: url("../img/chocolate.jpg");
-  background-repeat: no-repeat;
-  max-width: 560px;
-  border-radius: 15px;
-  padding-top: 17px;
-  padding-bottom: 23px;
-  padding-left: 19px;
-  padding-right: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
 .free-gift-subtitle {
@@ -825,7 +814,7 @@ body {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 42px;
 }
 
 .ice-cream-hit {
@@ -837,6 +826,10 @@ body {
   max-width: 267px;
   position: relative;
   margin-bottom: 89px;
+}
+
+.ice-cream:hover .ice-cream-link {
+  display: block;
 }
 
 li:nth-child(4n) {
@@ -860,6 +853,12 @@ li:nth-child(4n) {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0;
   margin-bottom: 40px;
+  line-height: 0.37;
+}
+
+.ice-cream-title:hover .ice-cream-title--link,
+.ice-cream-title:active .ice-cream-title--link {
+  color: #ffbc9e;
 }
 
 .ice-cream-image {
@@ -867,17 +866,24 @@ li:nth-child(4n) {
 }
 
 .ice-cream-cost {
-  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
   font-size: 45px;
   font-weight: 700;
   line-height: 45px;
   margin: 0;
   position: absolute;
   top: 211px;
-  right: 159px;
+  left: 0;
+}
+
+.ice-cream-currency{
+  position: absolute;
+  bottom: 22px;
+  left: 80px;
 }
 
 .ice-cream-kg {
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
   font-size: 30px;
   position: absolute;
   top: 228px;
@@ -885,16 +891,25 @@ li:nth-child(4n) {
   margin: 0;
 }
 
-.ice-cream-link {
+.button--ice-cream-link {
   color: #fefefe;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
-  box-shadow: 0 1px 2px #ac1000;
-  background-color: #e84d37;
-  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  position: absolute;
+  top: 335px;
+  left: 30px;
+  padding: 13px 17px;
+  border-radius: 25px;
+}
+
+.ice-cream .button--ice-cream-link {
   display: none;
+}
+
+.ice-cream:hover .button--ice-cream-link {
+  display: block;
 }
 
 .advantages {
@@ -944,33 +959,33 @@ li:nth-child(4n) {
   padding-top: 22px;
 }
 
-.advantages-svg-1::before,
-.advantages-svg-2::before,
-.advantages-svg-3::before,
-.advantages-svg-4::before {
+.advantages-item--ice::before,
+.advantages-item--eco::before,
+.advantages-item--cow::before,
+.advantages-item--thermometer::before {
   content: "";
   position: absolute;
   width: 49px;
   height: 49px;
   background-repeat: no-repeat;
-  left: 0;
+  left: -1px;
   top: 10px;
 }
 
-.advantages-svg-1::before {
+.advantages-item--ice::before {
   background-image: url("../img/ice-cream.svg");
 }
 
-.advantages-svg-2::before {
+.advantages-item--eco::before {
   background-image: url("../img/eco.svg");
 
 }
 
-.advantages-svg-3::before {
+.advantages-item--cow::before {
   background-image: url("../img/cow.svg");
 }
 
-.advantages-svg-4::before {
+.advantages-item--thermometer::before {
   background-image: url("../img/thermometer.svg");
 }
 
@@ -1013,10 +1028,8 @@ justify-content: space-between;
 }
 
 .blog-link:hover,
-.blog-link:active,
-.footer-site-icon:hover,
-.footer-site-icon:active {
-  color: #ffbc9e;
+.blog-link:active {
+ color: #e84d37;
 }
 
 .subscribe {
@@ -1068,10 +1081,6 @@ justify-content: space-between;
   border: none;
 }
 
-.map {
-  margin: 0 auto;
-  width: 1200px;
-}
 
 .pagination {
   display: flex;
@@ -1156,34 +1165,58 @@ justify-content: space-between;
   text-decoration: none;
 }
 
+.map {
+  margin: 0 auto;
+  width: 1200px;
+  position: relative;
+}
+
 .contacts {
   text-align: left;
   color: #323232;
-  display: none;
+  position: absolute;
+  max-width: 302px;
+  min-height: 305px;
+  background-color: #ffffff;
+  display: inline-block;
+  top: 63px;
+  right: 27px;
+  border-radius: 15px;
+  padding: 28px 25px;
+
 }
 
 .contacts-text {
   font-size: 14px;
   font-weight: normal;
   line-height: 1.43;
+  margin: 0;
+  padding-right: 80px;
+  margin-bottom: 3px;
 }
 
 .contacts-text-address {
   font-size: 18px;
   font-weight: bold;
   line-height: 1.33;
+  margin: 0;
+  margin-bottom: 18px;
 }
 
 .contacts-text-address--phone {
   line-height: 1.57;
+  margin: 0;
 }
 
 .contacts-text--time {
   line-height: 1.57;
+  margin-bottom: 32px;
 }
 
 .button--feedback {
   text-decoration: none;
+  padding: 13px 27px;
+  border-radius: 25px;
 }
 
 .footer {
@@ -1289,10 +1322,9 @@ justify-content: space-between;
   font-weight: 700;
 }
 
-.footer-nav-icon:hover {
-  color: #ffbc9e;
-}
-
+.footer-site-icon:hover,
+.footer-site-icon:active,
+.footer-nav-icon:hover,
 .footer-nav-icon:active {
   color: #ffbc9e;
 }
