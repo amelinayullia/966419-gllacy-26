@@ -649,7 +649,6 @@ body {
 
 .free-gift-container {
   display: flex;
-  margin-bottom: 40px;
   justify-content: space-between;
   margin-top: -15px;
 }
@@ -659,7 +658,7 @@ body {
   max-width: 560px;
   border-radius: 15px;
   padding-top: 15px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
   padding-left: 19px;
   padding-right: 20px;
   display: flex;
@@ -689,7 +688,7 @@ body {
   line-height: 1.22;
   text-align: left;
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
 }
 
 .button--free-gift-add {
@@ -762,6 +761,8 @@ body {
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
+  border-radius: 30px;
+  padding: 7px 12px;
 }
 
 .catalog-sorting:hover {
@@ -774,6 +775,8 @@ body {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
   border: solid 2px #ffffff;
+  border-radius: 30px;
+  padding: 10px 30px;
 }
 
 .apply-filter:hover {
@@ -785,6 +788,7 @@ body {
   color: #323232;
   box-shadow: inset 0px 2px 1px 0 #696969;
   background-color: #ededed;
+  border: none;
 }
 
 .main-navigation-product {
@@ -825,7 +829,7 @@ body {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 42px;
+  margin-top: 41px;
 }
 
 .ice-cream-hit {
@@ -833,14 +837,10 @@ body {
 }
 
 .ice-cream {
-  margin-right: 26px;
   max-width: 267px;
   position: relative;
-  margin-bottom: 89px;
-}
-
-.ice-cream:hover .ice-cream-link {
-  display: block;
+  margin-bottom: 40px;
+  margin-right: 26px;
 }
 
 li:nth-child(4n) {
@@ -849,11 +849,9 @@ li:nth-child(4n) {
 
 .ice-cream-title {
   text-align: center;
-  position: absolute;
-  top: 278px;
-  right: 6px;
   margin: 0;
-  padding-left: 5px;
+  padding-top: 3px;
+  z-index: 3;
 }
 
 .ice-cream-title--link {
@@ -883,13 +881,13 @@ li:nth-child(4n) {
   line-height: 45px;
   margin: 0;
   position: absolute;
-  top: 211px;
-  left: 0;
+  top: 209px;
+  left: -2;
 }
 
 .ice-cream-currency{
   position: absolute;
-  bottom: 22px;
+  top: 213px;
   left: 80px;
 }
 
@@ -897,9 +895,30 @@ li:nth-child(4n) {
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
   font-size: 30px;
   position: absolute;
-  top: 228px;
+  top: 226px;
   left: 111px;
   margin: 0;
+}
+
+.ice-cream-container {
+  position: relative;
+  min-height: 322px;
+}
+
+.ice-cream-container .button-ice-cream-hover {
+  display: none;
+}
+
+.ice-cream-container:hover .button-ice-cream-hover {
+  display: block;
+}
+
+.ice-cream-container .button--ice-cream-link {
+  display: none;
+}
+
+.ice-cream-container:hover .button--ice-cream-link {
+  display: block;
 }
 
 .button--ice-cream-link {
@@ -908,19 +927,25 @@ li:nth-child(4n) {
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
+  padding: 13px 17px;
+  border-radius: 25px;
   position: absolute;
   top: 335px;
   left: 30px;
-  padding: 13px 17px;
-  border-radius: 25px;
+  z-index: 2;
 }
 
-.ice-cream .button--ice-cream-link {
-  display: none;
-}
-
-.ice-cream:hover .button--ice-cream-link {
-  display: block;
+.button-ice-cream-hover {
+  position: absolute;
+  width: 293px;
+  height: calc(100% + 85px);
+  opacity: 0.2;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  top: -5px;
+  left: -13px;
+  z-index: 1;
+  border-radius: 5px;
 }
 
 .advantages {
@@ -928,7 +953,7 @@ li:nth-child(4n) {
   background-repeat: no-repeat;
   color: #323232;
   border-radius: 15px;
-  padding-top: 27px;
+  padding-top: 25px;
   padding-left: 20px;
   padding-right: 28px;
   padding-bottom: 26px;
@@ -1193,17 +1218,21 @@ justify-content: space-between;
   top: 63px;
   right: 27px;
   border-radius: 15px;
-  padding: 28px 25px;
+  padding: 28px 25px 33px 25px;
 
 }
 
 .contacts-text {
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.43;
+  line-height: 1.40;
   margin: 0;
-  padding-right: 80px;
+  padding-right: 94px;
   margin-bottom: 3px;
+}
+
+.contacts-text--phone {
+  padding-right: 80px;
 }
 
 .contacts-text-address {
@@ -1211,7 +1240,7 @@ justify-content: space-between;
   font-weight: bold;
   line-height: 1.33;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
 }
 
 .contacts-text-address--phone {
@@ -1226,7 +1255,7 @@ justify-content: space-between;
 
 .button--feedback {
   text-decoration: none;
-  padding: 13px 27px;
+  padding: 11px 27px;
   border-radius: 25px;
 }
 
