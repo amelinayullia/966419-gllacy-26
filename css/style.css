@@ -194,10 +194,6 @@ body {
   background-color: #f6b5a5;
 }
 
-.navigation-dropdown-item: {
-  background-color: #fbded7;
-}
-
 .user-list {
   display: flex;
   flex-wrap: wrap;
@@ -449,7 +445,6 @@ body {
 
 .user-popup--button {
   padding: 11px 26px;
-  border: none;
   border-radius: 25px;
 }
 
@@ -528,7 +523,6 @@ body {
 }
 
 .button--basket {
-  border: none;
   border-radius: 30px;
   padding: 11px 14px;
   margin-top: 14px;
@@ -542,14 +536,16 @@ body {
   line-height: 16px;
   margin: 0px;
   text-align: right;
+  margin-bottom: 3px;
 }
 
 .text-phone {
   font-size: 22px;
   line-height: 24px;
-  margin: 0px;
-  margin-top: 3px;
+  text-decoration: none;
+  color: #fff;
   text-align: right;
+  display: block;
 }
 
 .site-wrapper {
@@ -558,7 +554,7 @@ body {
   background-color: #849d8f;
   background-image: url("../img/two-ice.png");
   background-repeat: no-repeat;
-  background-position: center 84px;
+  background-position: top center;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -566,13 +562,6 @@ body {
   position: relative;
   padding-top: 278px;
   text-align: center;
-  color: #ffffff;
-}
-
-.slider-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .slider-title {
@@ -645,6 +634,10 @@ body {
   background-image: url("../img/two-ice-2.png");
 }
 
+.slider-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 .button {
   font-size: 18px;
   font-weight: 700;
@@ -674,13 +667,10 @@ body {
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   font-size: 32px;
   line-height: 1.38;
-  color: #ffffff;
   text-align: center;
   vertical-align: top;
-  border: none;
   text-decoration: none;
   border-radius: 50px;
-  cursor: pointer;
 }
 
 .slide {
@@ -715,7 +705,6 @@ body {
 
 .free-gift-subtitle {
   font-size: 35px;
-  font-weight: bold;
   line-height: 1.17;
   text-align: left;
   margin: 0;
@@ -724,8 +713,6 @@ body {
 
 .free-gift-text {
   font-size: 18px;
-  font-weight: bold;
-  line-height: 1.22;
   text-align: left;
   margin: 0;
   margin-bottom: 45px;
@@ -813,9 +800,6 @@ body {
   border-radius: 30px;
   min-width: 195px;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
   padding: 9px 12px;
   position: relative;
   border: none;
@@ -892,7 +876,6 @@ body {
 
 .catalog-title {
   font-size: 35px;
-  font-weight: 700;
   margin: 0;
   margin-bottom: 37px;
 }
@@ -937,7 +920,7 @@ body {
   width: 80px;
   height: 4px;
   margin-left: 33px;
-  background: rgba(255, 255, 255);
+  background: rgba(255, 255, 255, 1);
 }
 
 .toggle {
@@ -947,7 +930,7 @@ body {
   top: 8px;
   border-style: solid;
   border-width: 8px;
-  border-color: rgba(255, 255, 255);
+  border-color: rgba(255, 255, 255, 1);
   background-color: #849d8f;
   padding: 0;
   border-radius: 50%;
@@ -1180,10 +1163,6 @@ li:nth-child(4n) {
 }
 
 .button--ice-cream-link {
-  color: #fefefe;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
   text-decoration: none;
   padding: 13px 17px;
   border-radius: 25px;
@@ -1272,10 +1251,10 @@ li:nth-child(4n) {
 
 
 .blog-container{
-display: flex;
-margin-top: 39px;
-margin-bottom: 40px;
-justify-content: space-between;
+  display: flex;
+  margin-top: 39px;
+  margin-bottom: 40px;
+  justify-content: space-between;
 }
 
 .blog {
@@ -1309,7 +1288,7 @@ justify-content: space-between;
 
 .blog-link:hover,
 .blog-link:active {
- color: #e84d37;
+  color: #e84d37;
 }
 
 .subscribe {
@@ -1358,7 +1337,6 @@ justify-content: space-between;
 .button-subscribe {
   border-radius: 25px;
   padding: 10px 16px;
-  border: none;
 }
 
 
@@ -1375,7 +1353,6 @@ justify-content: space-between;
   margin: 0;
   margin-left: auto;
   margin-bottom: 29px;
-  list-style: none;
 }
 
 .pagination-item {
@@ -1482,7 +1459,6 @@ justify-content: space-between;
 
 .contacts-text-address {
   font-size: 18px;
-  font-weight: bold;
   line-height: 1.33;
   margin: 0;
   margin-bottom: 19px;
@@ -1490,7 +1466,8 @@ justify-content: space-between;
 
 .contacts-text-address--phone {
   line-height: 1.57;
-  margin: 0;
+  text-decoration: none;
+  color: #323232;
 }
 
 .contacts-text--time {
@@ -1509,7 +1486,7 @@ justify-content: space-between;
   justify-content: space-between;
   padding-top: 14px;
   padding-bottom: 26px;
- }
+}
 
 .footer-list {
   display: flex;
@@ -1630,9 +1607,6 @@ justify-content: space-between;
 
 .footer-site-icon {
   color: #fefefe;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -1682,13 +1656,12 @@ justify-content: space-between;
   background-color: #ffffff;
   border: 0;
   box-shadow: 0 0 0 1px rgba(178, 178, 178, 0.52);
-  }
+}
 
 .modal-name:hover,
 .modal-email:hover,
 .modal-text:hover {
   box-shadow: 0 0 0 2px rgba(154, 154, 154, 0.52);
-
 }
 
 .modal-name:focus,
