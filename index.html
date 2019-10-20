@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
     <div class="site-wrapper">
       <header class="container">
         <div class="header">
@@ -87,7 +90,7 @@
                   </g>
                 </svg>
 
-                <span class="user-text--login">Вход</span>
+                <span>Вход</span>
               </button>
 
               <form class="user-popup user-popup--login" action="http://echo.htmlacademy.ru" method="POST">
@@ -120,7 +123,7 @@
                     <circle cx="15.984" cy="18" r="2" />
                   </g>
                 </svg>
-                <span class="user-text-basket">Пусто</span>
+                <span>Пусто</span>
               </button>
             </li>
           </ul>
@@ -136,54 +139,42 @@
       </header>
 
       <main>
-        <div class="slider-wrapper">
-          <div class="container">
-            <section class="slider">
-              <h1 class="visually-hidden">Глейси-интернет магазин мороженого</h1>
+        <div class="container">
+          <section class="slider">
+            <h1 class="visually-hidden">Глейси-интернет магазин мороженого</h1>
 
-              <ul class="slider-list">
-                <li class="slider-item slide--active">
-                  <h3 class="slider-title">
-                    Крем-брюле и пломбир с малиновым джемом
-                  </h3>
+            <ul class="slider-list">
+              <li class="slider-item slide" id="slide1">
+                <h3 class="slider-title">
+                  Крем-брюле и пломбир с малиновым джемом
+                </h3>
 
-                  <a class="button button--slider" href="#">Давайте оба!</a>
-                </li>
+                <a class="button button--slider" href="#">Давайте оба!</a>
+              </li>
 
-                <li class="slider-item slide">
-                  <h3 class="slider-title">
-                    Шоколадный пломбир и лимонный сорбет
-                  </h3>
+              <li class="slider-item slide" id="slide2">
+                <h3 class="slider-title">
+                  Шоколадный пломбир и лимонный сорбет
+                </h3>
 
-                  <a class="button button--slider" href="#">Давайте оба!</a>
-                </li>
+                <a class="button button--slider" href="#">Давайте оба!</a>
+              </li>
 
-                <li class="slider-item slide">
-                  <h3 class="slider-title">
-                    Пломбир с помадкой и клубничный щербет
-                  </h3>
+              <li class="slider-item slide" id="slide3">
+                <h3 class="slider-title">
+                  Пломбир с помадкой и клубничный щербет
+                </h3>
 
-                  <a class="button button--slider" href="#">Давайте оба!</a>
-                </li>
-              </ul>
+                <a class="button button--slider" href="#">Давайте оба!</a>
+              </li>
+            </ul>
 
-              <div class="slider-toggle">
-                <ul class="slider-toggle-list">
-                  <li class="slider-toggle-item">
-                    <button class="slider-toggle-button slider-toggle-button--active" type="button"></button>
-                  </li>
-
-                  <li class="slider-toggle-item">
-                    <button class="slider-toggle-button" type="button"></button>
-                  </li>
-
-                  <li class="slider-toggle-item">
-                    <button class="slider-toggle-button" type="button"></button>
-                  </li>
-                </ul>
-              </div>
-            </section>
-          </div>
+            <div class="slider-controls">
+              <label class="slider-toggle" for="product-1">Первый</label>
+              <label class="slider-toggle" for="product-2">Второй</label>
+              <label class="slider-toggle" for="product-3">Третий</label>
+            </div>
+          </section>
         </div>
 
         <div class="free-gift-container container">
@@ -242,8 +233,6 @@
                 </h2>
 
                 <a class="button button--ice-cream-link" href="#">Быстрый просмотр</a>
-
-                <div class="button-ice-cream-hover"></div>
               </div>
             </li>
 
@@ -276,8 +265,6 @@
                 </h2>
 
                 <a class="button button--ice-cream-link" href="#">Быстрый просмотр</a>
-
-                <div class="button-ice-cream-hover"></div>
               </div>
             </li>
 
@@ -310,8 +297,6 @@
                 </h2>
 
                 <a class="button button--ice-cream-link" href="#">Быстрый просмотр</a>
-
-                <div class="button-ice-cream-hover"></div>
               </div>
             </li>
 
@@ -344,8 +329,6 @@
                 </h2>
 
                 <a class="button button--ice-cream-link" href="#">Быстрый просмотр</a>
-
-                <div class="button-ice-cream-hover"></div>
               </div>
             </li>
           </ul>
