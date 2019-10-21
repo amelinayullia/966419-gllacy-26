@@ -768,6 +768,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  background-color: #9d8b84;
 }
 
 .free-gift-section--1 {
@@ -1385,6 +1386,7 @@ li:nth-child(4n) {
   min-width: 560px;
   min-height: 220px;
   background-position: -53px -222px;
+  background-color: #f8f7f4;
 }
 
 .blog-text {
@@ -1568,7 +1570,6 @@ li:nth-child(4n) {
   max-width: 302px;
   min-height: 305px;
   background-color: #ffffff;
-  display: inline-block;
   top: 63px;
   right: 27px;
   border-radius: 15px;
