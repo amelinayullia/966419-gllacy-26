@@ -1285,7 +1285,6 @@ li:nth-child(4n) {
 
 .advantages {
   background-image: url("../img/wafer.jpg");
-  background-repeat: no-repeat;
   color: #323232;
   border-radius: 15px;
   padding-top: 25px;
