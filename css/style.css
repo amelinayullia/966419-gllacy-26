@@ -1384,6 +1384,7 @@ li:nth-child(4n) {
   padding-bottom: 26px;
   min-width: 560px;
   min-height: 220px;
+  background-position: -53px -222px;
 }
 
 .blog-text {
