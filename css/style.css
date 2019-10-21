@@ -1410,7 +1410,7 @@ li:nth-child(4n) {
 }
 
 .subscribe {
-  background-image: url("../img/post.png");
+  background-image: url("../img/bg-post.svg");
   background-repeat: no-repeat;
   border-radius: 15px;
   max-width: 560px;
