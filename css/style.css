@@ -18,9 +18,26 @@ body {
   color: #ffffff;
   line-height: 22px;
   font-weight: 700;
-  background-color: #849d8f;
   min-width: 1200px;
 }
+
+.catalog-body {
+  background-color: #849d8f;
+  background-image: linear-gradient(rgba(255,255,255, 0.2), #849d8f);
+  background-repeat: no-repeat;
+  background-size: 100% 650px;
+}
+
+/* .catalog-body::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 650px;
+
+} */
 
 .visually-hidden {
   position: absolute;
@@ -237,6 +254,9 @@ body {
 .user-button {
   display: -webkit-box;
   display: -ms-flexbox;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -248,12 +268,6 @@ body {
 
 .control-link--disabled {
   opacity: 0.2;
-}
-
-.user-item .user-button {
-  border: 0;
-  background-color: rgba(255, 255, 255, 0.2);
-  position: relative;
 }
 
 .user-button--loupe {
@@ -343,6 +357,16 @@ body {
 
 .user-item:hover .user-popup {
   display: block;
+}
+
+.user-item:hover .user-button {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.user-item:hover .user-icon,
+.user-item:hover .user-icon-login {
+  fill: #000;
 }
 
 .user-popup {
@@ -603,7 +627,7 @@ body {
   background-position: top center;
   -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
   -o-transition: background-image 0.5s ease, background-color 0.5s ease;
-  transition: background-image 0.5s ease, background-color 0.5s ease;
+  transition: background-image 1s ease, background-color 1s ease;
 }
 
 .slider {
