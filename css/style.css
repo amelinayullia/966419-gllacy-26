@@ -1744,8 +1744,8 @@ li:nth-child(4n) {
 }
 
 .modal {
-	display: none;
-	min-width: 478px;
+  display: none;
+	max-width: 478px;
 	padding: 15px 25px;
 	min-height: 443px;
 	border-radius: 10px;
@@ -1777,14 +1777,13 @@ li:nth-child(4n) {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
+  -webkit-box-direction: normal;
+  flex-wrap: wrap;
 }
 
 .modal-name,
 .modal-email {
-  max-width: 267px;
+  width: 267px;
   min-height: 44px;
 	padding: 0 15px 0 15px;
 	margin-bottom: 20px;
@@ -1796,7 +1795,7 @@ li:nth-child(4n) {
 	background-color: #ffffff;
 	border: 0;
 	-webkit-box-shadow: 0 0 0 1px rgba(178, 178, 178, 0.52);
-	box-shadow: 0 0 0 1px rgba(178, 178, 178, 0.52);
+  box-shadow: 0 0 0 1px rgba(178, 178, 178, 0.52);
 }
 
 .modal-name:hover,
