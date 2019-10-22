@@ -544,6 +544,12 @@ body {
   top: 168px;
 }
 
+.user-popup-link:hover,
+.user-popup-link:active {
+  color: #e84d37;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
+}
+
 .user-popup-link-basket {
   text-decoration: none;
   font-size: 13px;
@@ -553,6 +559,11 @@ body {
   color: #323232;
   max-width: 216px;
   padding-top: 10px;
+}
+
+.user-popup-link-basket:hover,
+.user-popup-link-basket:active {
+  color: #e84d37;
 }
 
 .user-popup-text {
@@ -596,9 +607,7 @@ body {
   border-radius: 30px;
   padding: 11px 14px;
   margin-top: 14px;
-  position: absolute;
-  right: 15px;
-  bottom: 22px;
+  align-self: flex-end;
 }
 
 .text-time {
@@ -848,6 +857,7 @@ body {
 .bread-crumbs-link:hover,
 .bread-crumbs-link:active {
   color: #ffbc9e;
+  border-color: #ffbc9e;
 }
 
 .bread-crumbs-link-home::after,
@@ -1219,6 +1229,7 @@ li:nth-child(4n) {
 .ice-cream-title--link:hover,
 .ice-cream-title--link:active {
   color: #ffbc9e;
+  border-color: #ffbc9e;
 }
 
 .ice-cream-image {
@@ -1760,6 +1771,7 @@ li:nth-child(4n) {
 .footer-nav-icon:hover,
 .footer-nav-icon:active {
   color: #ffbc9e;
+  border-color: #ffbc9e;
 }
 
 .footer-logo {
