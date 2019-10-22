@@ -839,6 +839,8 @@ body {
   display: flex;
   position: relative;
   top: -20px;
+  flex-wrap: wrap;
+  max-width: 500px;
 }
 
 .bread-crumbs-link {
@@ -1202,10 +1204,6 @@ body {
   position: relative;
   margin-bottom: 40px;
 }
-
-/**li:nth-child(4n) {
-  margin-right: 0;
-}**/
 
 .ice-cream-title {
   text-align: center;
