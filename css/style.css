@@ -229,8 +229,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -1205,9 +1203,9 @@ body {
   margin-bottom: 40px;
 }
 
-li:nth-child(4n) {
+/**li:nth-child(4n) {
   margin-right: 0;
-}
+}**/
 
 .ice-cream-title {
   text-align: center;
