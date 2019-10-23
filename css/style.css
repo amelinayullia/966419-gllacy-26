@@ -90,9 +90,6 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   height: 100%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .navigation-list,
@@ -147,6 +144,7 @@ body {
 
 .navigation_item {
   position: relative;
+  padding-top: 23px;
 }
 
 .navigation-link--catalog {
