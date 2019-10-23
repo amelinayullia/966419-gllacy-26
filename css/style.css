@@ -921,7 +921,6 @@ body {
 }
 
 .catalog-sorting {
-  margin-bottom: 16px;
   font-weight: 500;
   background-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
@@ -935,6 +934,7 @@ body {
 
 .select-wrapper {
   position: relative;
+  margin-bottom: 16px;
 }
 
 .select-wrapper::after {
@@ -951,6 +951,7 @@ body {
   border-style: solid;
   border-width: 10px 5px 0 5px;
   border-color: #fff transparent transparent transparent;
+  pointer-events: none;
 }
 
 .option {
