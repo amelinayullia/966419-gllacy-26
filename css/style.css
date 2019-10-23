@@ -28,16 +28,21 @@ body {
   background-size: 100% 650px;
 }
 
-/* .catalog-body::before {
+.popup-open::after {
   content: "";
-  width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
   left: 0;
-  height: 650px;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
-} */
+.popup-open::after {
+  display: none;
+}
 
 .visually-hidden {
   position: absolute;
