@@ -1202,9 +1202,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   margin-top: 40px;
 }
 
@@ -1216,6 +1213,11 @@ body {
   max-width: 267px;
   position: relative;
   margin-bottom: 40px;
+  margin-right: 26px;
+}
+
+.ice-cream:nth-child(4n) {
+  margin-right: 0;
 }
 
 .ice-cream-title {
@@ -1256,18 +1258,9 @@ body {
   left: 0;
 }
 
-.ice-cream-currency {
-  position: absolute;
-  top: 213px;
-  left: 80px;
-}
-
 .ice-cream-kg {
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
   font-size: 30px;
-  position: absolute;
-  top: 226px;
-  left: 111px;
   margin: 0;
 }
 
@@ -1323,7 +1316,7 @@ body {
   padding: 13px 17px;
   border-radius: 25px;
   position: absolute;
-  top: 335px;
+  bottom: -60px;
   left: 30px;
   z-index: 2;
 }
