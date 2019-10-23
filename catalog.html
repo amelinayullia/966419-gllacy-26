@@ -223,32 +223,36 @@
             <legend class="catalog-filter-class">Цена: 100 руб. – 500 руб.</legend>
 
             <div class="checkbox-container checkbox-container--scale">
-              <input class="scale-input" type="range" id="cost" name="cost" min="0" max="1000" value="100" />
+              <input class="scale-input visually-hidden" type="range" id="cost" name="cost" min="0" max="1000" value="100" />
 
               <div class="scale">
                 <div class="bar"></div>
               </div>
 
-              <button type="button" class="toggle toggle--min"></button>
+              <button type="button" class="toggle toggle--min">
+                <span class="visually-hidden">Минимальная цена</span>
+              </button>
 
-              <button type="button" class="toggle toggle--max"></button>
+              <button type="button" class="toggle toggle--max">
+                <span class="visually-hidden">Максимальная цена</span>
+              </button>
             </div>
           </fieldset>
 
           <fieldset class="catalog-filter">
             <legend class="catalog-filter-class">Жирность:</legend>
 
-            <div class="checkbox-container">
-              <input class="radio" type="radio" id="zero" name="fat" value="0" />
+            <div class="checkbox-container checkbox-container--radio">
+              <input class="radio visually-hidden" type="radio" id="zero" name="fat" value="0" />
               <label class="radio-label" for="zero">0%</label>
 
-              <input class="radio" type="radio" id="ten" name="fat" value="10" checked />
+              <input class="radio visually-hidden" type="radio" id="ten" name="fat" value="10" checked />
               <label class="radio-label" for="ten">до 10%</label>
 
-              <input class="radio" type="radio" id="upthirty" name="fat" value="30" />
+              <input class="radio visually-hidden" type="radio" id="upthirty" name="fat" value="30" />
               <label class="radio-label" for="upthirty">до 30%</label>
 
-              <input class="radio" type="radio" id="thirty" name="fat" value="30+" />
+              <input class="radio visually-hidden" type="radio" id="thirty" name="fat" value="30+" />
               <label class="radio-label" for="thirty">выше 30%</label>
             </div>
           </fieldset>
@@ -257,19 +261,19 @@
             <legend class="catalog-filter-class">Наполнители:</legend>
 
             <div class="checkbox-container">
-              <input class="checkbox" type="checkbox" id="chocolate" name="chocolate" checked />
+              <input class="checkbox visually-hidden" type="checkbox" id="chocolate" name="chocolate" checked />
               <label class="checkbox-label" for="chocolate">шоколадные</label>
 
-              <input class="checkbox" type="checkbox" id="sugar" name="sugar" checked />
+              <input class="checkbox visually-hidden" type="checkbox" id="sugar" name="sugar" checked />
               <label class="checkbox-label" for="sugar">сахарные присыпки</label>
 
-              <input class="checkbox" type="checkbox" id="fruit" name="fruit" />
+              <input class="checkbox visually-hidden" type="checkbox" id="fruit" name="fruit" />
               <label class="checkbox-label" for="fruit">фрукты</label>
 
-              <input class="checkbox" type="checkbox" id="syrups" name="syrups" />
+              <input class="checkbox visually-hidden" type="checkbox" id="syrups" name="syrups" />
               <label class="checkbox-label" for="syrups">сиропы</label>
 
-              <input class="checkbox" type="checkbox" id="jams" name="jams" />
+              <input class="checkbox visually-hidden" type="checkbox" id="jams" name="jams" />
               <label class="checkbox-label" for="jams">джемы</label>
             </div>
           </fieldset>

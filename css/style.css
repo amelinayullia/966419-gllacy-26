@@ -608,11 +608,14 @@ body {
   align-self: flex-end;
 }
 
+.header-aside {
+  text-align: right;
+}
+
 .text-time {
   font-size: 14px;
   line-height: 16px;
   margin: 0px;
-  text-align: right;
   margin-bottom: 3px;
 }
 
@@ -621,8 +624,6 @@ body {
   line-height: 24px;
   text-decoration: none;
   color: #fff;
-  text-align: right;
-  display: block;
 }
 
 .site-wrapper {
@@ -715,6 +716,10 @@ body {
 
 .slider-toggle:hover {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slider-toggle:active {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .button {
@@ -1022,10 +1027,13 @@ body {
   min-height: 37px;
 }
 
+.checkbox-container--radio {
+  max-width: 415px;
+}
+
 .scale-input {
   position: absolute;
   cursor: pointer;
-  display: none;
 }
 
 .scale::before {
@@ -1094,7 +1102,6 @@ body {
 .radio {
   position: absolute;
   cursor: pointer;
-  display: none;
 }
 
 .radio + .radio-label::before {
@@ -1148,7 +1155,6 @@ body {
 .checkbox {
   position: absolute;
   cursor: pointer;
-  display: none;
 }
 
 .checkbox + .checkbox-label::before {
