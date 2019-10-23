@@ -246,12 +246,12 @@ body {
   display: flex;
   margin-top: 15px;
   margin-bottom: 17px;
-  padding-right: 10px;
+  margin-right: 10px;
   position: relative;
 }
 
 .user-item:nth-child(3) {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .user-button {
@@ -809,15 +809,16 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background-color: #9d8b84;
 }
 
 .free-gift-section--1 {
   background-image: url("../img/raspberries.jpg");
+  background-color:  #dc143c;
 }
 
 .free-gift-section--2 {
   background-image: url("../img/chocolate.jpg");
+  background-color:  #724237;
 }
 
 .free-gift-subtitle {
@@ -867,7 +868,7 @@ body {
 .bread-crumbs-link:hover,
 .bread-crumbs-link:active {
   color: #ffbc9e;
-  border-color: #ffbc9e;
+  border-color: rgba(255, 188, 158, 0.3);
 }
 
 .bread-crumbs-link-home::after,
@@ -1236,7 +1237,7 @@ body {
 .ice-cream-title--link:hover,
 .ice-cream-title--link:active {
   color: #ffbc9e;
-  border-color: #ffbc9e;
+  border-color: rgba(255, 188, 158, 0.3);
 }
 
 .ice-cream-image {
@@ -1782,7 +1783,7 @@ body {
 .footer-nav-icon:hover,
 .footer-nav-icon:active {
   color: #ffbc9e;
-  border-color: #ffbc9e;
+  border-color: rgba(255, 188, 158, 0.3);
 }
 
 .footer-logo {
