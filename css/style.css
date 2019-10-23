@@ -1410,6 +1410,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .blog {
@@ -1420,7 +1421,7 @@ body {
   padding-right: 19px;
   padding-top: 24px;
   padding-bottom: 26px;
-  min-width: 560px;
+  width: 560px;
   min-height: 220px;
   background-position: -53px -222px;
   background-color: #f8f7f4;
@@ -1431,6 +1432,7 @@ body {
   color: #323232;
   margin: 0;
   margin-bottom: 5px;
+  width: 290px;
 }
 
 .blog-link {
@@ -1446,6 +1448,7 @@ body {
 .blog-link:hover,
 .blog-link:active {
   color: #e84d37;
+  text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
 .subscribe {
@@ -1453,6 +1456,7 @@ body {
   background-repeat: no-repeat;
   border-radius: 15px;
   max-width: 560px;
+  background-size: cover;
 }
 
 .subscribe-container {
