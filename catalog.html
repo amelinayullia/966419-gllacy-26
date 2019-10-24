@@ -99,9 +99,11 @@
               <div class="user-popup-row">
                 <button class="button user-popup--button" type="submit">Войти</button>
 
-                <a class="user-popup-link user-popup-link--1" href="#">Забыли пароль?</a>
+                <div class="user-popup-link-wrap">
+                  <a class="user-popup-link" href="#">Забыли пароль?</a>
 
-                <a class="user-popup-link user-popup-link--2" href="#">Новая регистрация</a>
+                  <a class="user-popup-link" href="#">Новая регистрация</a>
+                </div>
               </div>
             </form>
           </li>
@@ -563,7 +565,7 @@
       <div class="pagination">
         <ul class="pagination-conteiner">
           <li class="pagination-item pagination-item--prev">
-            <a class="control-link control-link--disabled" href="#">
+            <a class="control-link control-link--disabled" href="#"><span class="visually-hidden">Переход на предыдущую страницу</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
                 <path fill="#ffffff"
                   d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z" />
@@ -593,6 +595,8 @@
 
           <li class="pagination-item pagination-item--next">
             <a class="control-link" href="#">
+              <span class="visually-hidden">Переход на следующщую страницу</span>
+
               <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
                 <path fill="#ffffff"
                   d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z" />
