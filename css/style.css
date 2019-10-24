@@ -1215,7 +1215,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 41px;
 }
 
 .ice-cream-hit {
@@ -1269,12 +1269,20 @@ body {
   position: absolute;
   top: 209px;
   left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ice-cream-currency {
+  transform: translateY(3px);
+  margin-left: 3px;
 }
 
 .ice-cream-kg {
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
   font-size: 30px;
   margin: 0;
+  transform: translateY(4px);
 }
 
 .ice-cream-container {
@@ -1671,7 +1679,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-bottom: 26px;
 }
 
@@ -1694,9 +1702,9 @@ body {
 }
 
 .footer-nav {
-  margin-top: 14px;
+  margin-top: 13px;
   min-width: 360px;
-  padding-left: 24px;
+  padding-left: 22px;
 }
 
 .footer-nav-list {
