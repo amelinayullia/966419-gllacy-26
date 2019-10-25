@@ -718,6 +718,14 @@ body {
   background-color: rgba(255, 255, 255, 1);
 }
 
+#product-1:focus ~ .site-wrapper label[for="product-1"],
+#product-2:focus ~ .site-wrapper label[for="product-2"],
+#product-3:focus ~ .site-wrapper label[for="product-3"] {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
 .button {
   font-size: 18px;
   font-weight: 700;
