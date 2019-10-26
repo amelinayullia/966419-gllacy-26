@@ -23,8 +23,8 @@ body {
 
 .catalog-body {
   background-color: #849d8f;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(#849d8f));
   background-image: -o-linear-gradient(rgba(255, 255, 255, 0.2), #849d8f);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(#849d8f));
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), #849d8f);
   background-repeat: no-repeat;
   background-size: 100% 650px;
@@ -756,13 +756,7 @@ body {
   box-shadow: 0px 2px 2px 0 #ac1000;
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
     -o-linear-gradient(bottom, #e74a35, #f26843);
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(255, 255, 255, 0.2)),
-      to(rgba(255, 255, 255, 0.2))
-    ),
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2))),
     -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
     linear-gradient(to top, #e74a35, #f26843);
@@ -1654,6 +1648,15 @@ body {
   text-decoration: none;
 }
 
+.map {
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 435px;
+  width: 100%;
+}
+
 iframe {
   width: 100%;
   height: 435px;
@@ -1662,24 +1665,21 @@ iframe {
   position: relative;
 }
 
-.map {
-  background-image: url("../img/map.png");
+.container--contacts {
   position: relative;
-  width: 100%;
-  height: 435px;
 }
 
 .contacts {
-  text-align: left;
   color: #323232;
-  position: absolute;
   max-width: 302px;
   min-height: 305px;
   background-color: #ffffff;
-  top: 63px;
-  right: 186px;
   border-radius: 15px;
   padding: 28px 25px 33px 25px;
+  position: absolute;
+  top: 63px;
+  right: 28px;
+  z-index: 2;
 }
 
 .contacts-text {
@@ -1842,68 +1842,6 @@ iframe {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-@-webkit-keyframes jello-horizontal {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1) translate(-50%, -50%);
-    transform: scale3d(1, 1, 1) translate(-50%, -50%);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1) translate(-50%, -50%);
-    transform: scale3d(1.25, 0.75, 1) translate(-50%, -50%);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1) translate(-50%, -50%);
-    transform: scale3d(0.75, 1.25, 1) translate(-50%, -50%);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1) translate(-50%, -50%);
-    transform: scale3d(1.15, 0.85, 1) translate(-50%, -50%);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1) translate(-50%, -50%);
-    transform: scale3d(0.95, 1.05, 1) translate(-50%, -50%);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1) translate(-50%, -50%);
-    transform: scale3d(1.05, 0.95, 1) translate(-50%, -50%);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1) translate(-50%, -50%);
-    transform: scale3d(1, 1, 1) translate(-50%, -50%);
-  }
-}
-
-@keyframes jello-horizontal {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1) translate(-50%, -50%);
-    transform: scale3d(1, 1, 1) translate(-50%, -50%);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1) translate(-50%, -50%);
-    transform: scale3d(1.25, 0.75, 1) translate(-50%, -50%);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1) translate(-50%, -50%);
-    transform: scale3d(0.75, 1.25, 1) translate(-50%, -50%);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1) translate(-50%, -50%);
-    transform: scale3d(1.15, 0.85, 1) translate(-50%, -50%);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1) translate(-50%, -50%);
-    transform: scale3d(0.95, 1.05, 1) translate(-50%, -50%);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1) translate(-50%, -50%);
-    transform: scale3d(1.05, 0.95, 1) translate(-50%, -50%);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1) translate(-50%, -50%);
-    transform: scale3d(1, 1, 1) translate(-50%, -50%);
-  }
-}
-
 @-webkit-keyframes scale-in-center {
   0% {
     -webkit-transform: scale(0) translate(-50%, -50%);
@@ -1930,6 +1868,64 @@ iframe {
   }
 }
 
+@-webkit-keyframes shake-horizontal {
+  0%,
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-48%) translateY(-50%);
+            transform: translateX(-48%) translateY(-50%);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(-52%) translateY(-50%);
+            transform: translateX(-52%) translateY(-50%);
+  }
+  80% {
+    -webkit-transform: translateX(-48%) translateY(-50%);
+            transform: translateX(-48%) translateY(-50%);
+  }
+  90% {
+    -webkit-transform: translateX(-52%) translateY(-50%);
+            transform: translateX(-52%) translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+@keyframes shake-horizontal {
+  0%,
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-48%) translateY(-50%);
+            transform: translateX(-48%) translateY(-50%);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(-52%) translateY(-50%);
+            transform: translateX(-52%) translateY(-50%);
+  }
+  80% {
+    -webkit-transform: translateX(-48%) translateY(-50%);
+            transform: translateX(-48%) translateY(-50%);
+  }
+  90% {
+    -webkit-transform: translateX(-52%) translateY(-50%);
+            transform: translateX(-52%) translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+  }
+}
+
 .modal {
   display: none;
   max-width: 478px;
@@ -1949,15 +1945,14 @@ iframe {
 .modal-show {
   -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-
   display: block;
 }
 
 .modal-error {
-  -webkit-animation: jello-horizontal 0.9s both;
-  animation: jello-horizontal 0.9s both;
   -webkit-box-shadow: 0 0 0 2px red;
   box-shadow: 0 0 0 2px red;
+  -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 .button--feedback:active .modal {

@@ -1,10 +1,13 @@
-'use strict'
+"use strict"
 
 var link = document.querySelector(".button--feedback");
 var bodyElement = document.querySelector("body");
 var popup = document.querySelector(".modal");
 var close = popup.querySelector(".modal-button-close");
+var form = popup.querySelector("form");
 var userName = popup.querySelector("[name=user-name]");
+var email = popup.querySelector("[name=email]");
+var text = popup.querySelector("[name=text]");
 
 var closePopup = function() {
   popup.classList.remove("modal-show");
@@ -22,14 +25,21 @@ link.addEventListener("click", function (evt) {
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
-    closePopup();
+  closePopup();
 });
 
+form.addEventListener("submit", function (evt) {
+  if (!userName.value || !email.value || !text.value) {
+  evt.preventDefault();
+  popup.classList.add("modal-error");
+  console.log("Нужно ввести имя, email и текст");
+  }
+});
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    evt.preventDefault();
     if (popup.classList.contains("modal-show")) {
+      evt.preventDefault();
       closePopup();
     }
   }
