@@ -171,7 +171,7 @@ body {
   background-color: #f8f7f4;
   border-radius: 5px;
   display: none;
-  top: 30px;
+  top: 55px;
   left: -8px;
   padding-top: 4px;
   padding-bottom: 10px;
@@ -1627,10 +1627,19 @@ body {
   text-decoration: none;
 }
 
-.map {
-  margin: 0 auto;
-  width: 1200px;
+iframe {
+  width: 100%;
+  height: 435px;
+  border: 0;
+  display: block;
   position: relative;
+}
+
+.map {
+  background-image: url("../img/map.png");
+  position: relative;
+  width: 100%;
+  height: 435px;
 }
 
 .contacts {
@@ -1641,7 +1650,7 @@ body {
   min-height: 305px;
   background-color: #ffffff;
   top: 63px;
-  right: 27px;
+  right: 186px;
   border-radius: 15px;
   padding: 28px 25px 33px 25px;
 }
